@@ -1,0 +1,4 @@
+#import "task_starttask_detailController.h"
+@interface CustomUI_task_starttask_detailController:task_starttask_detailController
+
+@end

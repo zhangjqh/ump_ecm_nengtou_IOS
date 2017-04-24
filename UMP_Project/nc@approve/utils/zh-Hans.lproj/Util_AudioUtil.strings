@@ -1,0 +1,14 @@
+/* 
+  btarget_Util_AudioUtil.strings
+  NCV61Localization
+
+  Created by sunset on 13-5-2.
+  Copyright (c) 2013年 sunset. All rights reserved.
+*/
+{
+  NCV61_Alert_Confirm = "确定";
+  NCV61_Alert_AudioInputNotAvailable = "音频输入不可用！";
+  NCV61_Alert_HardwareDiskFull = "硬盘已满！";
+  NCV61_Alert_AudioInputHardwareNotAvailabel = "音频输入硬件不可用！";
+  iOS7_Alert_Privacy_Microphone = "App需要访问您的麦克风。请启用麦克风-设置/隐私/麦克风";
+}

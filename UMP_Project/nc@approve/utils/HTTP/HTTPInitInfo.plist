@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>server_url</key>
+	<string>http://10.1.37.45:8090/servlet/</string>
+	<key>isEncrypt</key>
+	<true/>
+	<key>encrypt_type</key>
+	<integer>1</integer>
+	<key>isCompression</key>
+	<false/>
+	<key>compression_type</key>
+	<integer>-1</integer>
+	<key>trans_type</key>
+	<integer>0</integer>
+	<key>trans_order</key>
+	<integer>-1</integer>
+	<key>downLoadSavePath</key>
+	<string></string>
+	<key>downLoadTempPath</key>
+	<string></string>
+	<key>contaiver</key>
+	<false/>
+	<key>needAppendServlet</key>
+	<true/>
+	<key>translateversion</key>
+	<string>1.1</string>
+</dict>
+</plist>

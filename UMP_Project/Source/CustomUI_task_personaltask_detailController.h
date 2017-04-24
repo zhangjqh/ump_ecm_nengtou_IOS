@@ -1,0 +1,4 @@
+#import "task_personaltask_detailController.h"
+@interface CustomUI_task_personaltask_detailController:task_personaltask_detailController
+
+@end

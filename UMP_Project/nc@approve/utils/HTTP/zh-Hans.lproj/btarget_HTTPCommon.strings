@@ -1,0 +1,21 @@
+/* 
+  btarget_HTTPCommon.strings
+
+  Created by sunset on 12-11-26.
+  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+*/
+{
+  WA_HTTP_RQ_TIMEOUT="请求超时!";
+  WA_HTTP_ILLEGALURL = "非法域名!";
+  WA_HTTP_NULL_URL = "服务器地址为空";
+  WA_HTTP_CONNERROR = "连接移动服务器失败!";
+  WA_HTTP_CONNFAIL = "无法创建请求!";
+  WA_HTTP_NET_NA = "当前网络不可用!";
+  WA_HTTP_WRONGURL = "无法获取服务，服务地址出错!";
+  WA_HTTP_TTNS = "请求异常，请联系管理员!";
+  WA_HTTP_NOSERVICE = "找不到服务";
+  WA_HTTP_WRONGPARAM = "系统发生异常";
+  WA_HTTP_SESSIONTOUT = "session已过期，请重新登陆!";
+  WA_HTTP_SOTRELOGINFAIL = "与服务器失去连接，请重新登陆!";
+  WA_HTTP_OCOAFLAG = "请求失败，请重新尝试或联系管理员!";
+}

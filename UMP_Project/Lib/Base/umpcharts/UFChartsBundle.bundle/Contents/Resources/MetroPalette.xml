@@ -1,0 +1,30 @@
+<Palette>
+    <Name>Metro</Name>
+    <Items>
+        <Count>6</Count>
+        <Entry>
+            <Color>255, 127, 209, 59</Color>
+            <Color>255, 88, 152, 36</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 234, 21, 122</Color>
+            <Color>255, 164, 15, 85</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 254, 184, 10</Color>
+            <Color>255, 184, 131, 1</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 0, 173, 220</Color>
+            <Color>255, 0, 121, 154</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 115, 138, 200</Color>
+            <Color>255, 62, 88, 158</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 26, 179, 159</Color>
+            <Color>255, 18, 125, 111</Color>
+        </Entry>
+    </Items>
+</Palette>

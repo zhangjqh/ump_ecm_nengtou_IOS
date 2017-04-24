@@ -1,0 +1,14 @@
+/* 
+  btarget_Util_AudioUtil.strings
+  NCV61Localization
+
+  Created by sunset on 13-5-2.
+  Copyright (c) 2013年 sunset. All rights reserved.
+*/
+{
+	NCV61_Alert_Confirm = "OK";
+	NCV61_Alert_AudioInputNotAvailable = "Audio Input not Available";
+	NCV61_Alert_HardwareDiskFull = "Hardware Disk is full!!";
+	NCV61_Alert_AudioInputHardwareNotAvailabel = "Audio input hardware not available";
+	iOS7_Alert_Privacy_Microphone = "App needs to use your microphone.Please turn on microphone-Setting/Privacy/Microphone";
+}

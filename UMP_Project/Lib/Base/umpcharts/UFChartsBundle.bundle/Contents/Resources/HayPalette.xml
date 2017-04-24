@@ -1,0 +1,30 @@
+<Palette>
+    <Name>Hay</Name>
+    <Items>
+        <Count>6</Count>
+        <Entry>
+            <Color>255, 213, 247, 255</Color>
+            <Color>255, 157, 217, 238</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 218, 254, 122</Color>
+            <Color>255, 198, 244, 80</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 136, 221, 246</Color>
+            <Color>255, 59, 161, 197</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 163, 222, 78</Color>
+            <Color>255, 102, 181, 3</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 79, 152, 198</Color>
+            <Color>255, 4, 85, 156</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 86, 153, 78</Color>
+            <Color>255, 18, 96, 3</Color>
+        </Entry>
+    </Items>
+</Palette>

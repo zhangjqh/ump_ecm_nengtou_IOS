@@ -1,0 +1,10 @@
+{
+	LoadData = "Loading data\U2026";
+	SearchTitle = "Search Material";
+	SearchAll = All;
+	SearchOk = OK;
+	NoSupplies = "No qualified data";
+	NoMoreResult = "No more data";
+	DataAddOverPage = "Data error";
+	NoData = "No Data";
+}

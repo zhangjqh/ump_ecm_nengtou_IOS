@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C6380D67E0EB64127D52C1D1F6CDF6F8A5A2C563",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C6380D67E0EB64127D52C1D1F6CDF6F8A5A2C563" : 0,
+    "ADA62D764B72223946FB4FD4DF0D3E7E64A701E9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "27DE90DE-9FD3-4BEB-A519-306CA4E30A85",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C6380D67E0EB64127D52C1D1F6CDF6F8A5A2C563" : "MA_OA_A0A000\/",
+    "ADA62D764B72223946FB4FD4DF0D3E7E64A701E9" : "Walden\/umios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "UMP_Project",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ECMobile\/iOS\/Develop\/UMP_Project.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "172.16.50.51:uapadmin\/umios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ADA62D764B72223946FB4FD4DF0D3E7E64A701E9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/10.10.2.168:29418\/MA_OA_A0A000",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C6380D67E0EB64127D52C1D1F6CDF6F8A5A2C563"
+    }
+  ]
+}

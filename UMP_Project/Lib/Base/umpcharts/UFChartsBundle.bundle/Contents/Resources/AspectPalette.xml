@@ -1,0 +1,30 @@
+<Palette>
+    <Name>Aspect</Name>
+    <Items>
+        <Count>6</Count>
+        <Entry>
+            <Color>255, 240, 127, 9</Color>
+            <Color>255, 168, 89, 6</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 159, 41, 54</Color>
+            <Color>255, 111, 29, 38</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 27, 88, 124</Color>
+            <Color>255, 19, 62, 87</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 78, 133, 66</Color>
+            <Color>255, 55, 93, 46</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 96, 72, 120</Color>
+            <Color>255, 67, 50, 84</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 193, 152, 89</Color>
+            <Color>255, 144, 108, 54</Color>
+        </Entry>
+    </Items>
+</Palette>

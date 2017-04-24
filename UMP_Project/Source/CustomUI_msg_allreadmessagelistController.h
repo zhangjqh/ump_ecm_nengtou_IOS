@@ -1,0 +1,4 @@
+#import "msg_allreadmessagelistController.h"
+@interface CustomUI_msg_allreadmessagelistController:msg_allreadmessagelistController
+
+@end

@@ -1,0 +1,54 @@
+<Palette>
+    <Name>Nature</Name>
+    <Items>
+        <Count>12</Count>
+        <Entry>
+            <Color>255, 206, 146, 30</Color>
+            <Color>255, 239, 188, 88</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 102, 168, 9</Color>
+            <Color>255, 146, 201, 67</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 200, 76, 27</Color>
+            <Color>255, 234, 118, 72</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 200, 173, 58</Color>
+            <Color>255, 246, 213, 76</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 119, 199, 70</Color>
+            <Color>255, 144, 238, 82</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 152, 58, 23</Color>
+            <Color>255, 187, 86, 49</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 0, 136, 0</Color>
+            <Color>255, 30, 171, 27</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 158, 161, 0</Color>
+            <Color>255, 196, 194, 0</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 55, 159, 113</Color>
+            <Color>255, 72, 194, 141</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 206, 172, 104</Color>
+            <Color>255, 236, 202, 134</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 115, 192, 192</Color>
+            <Color>255, 132, 227, 181</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 234, 147, 115</Color>
+            <Color>255, 255, 175, 149</Color>
+        </Entry>
+    </Items>
+</Palette>

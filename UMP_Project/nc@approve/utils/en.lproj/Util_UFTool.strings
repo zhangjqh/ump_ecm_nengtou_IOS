@@ -1,0 +1,15 @@
+/* 
+  btarget_Util_UFTool.strings
+  NCV61Localization
+
+  Created by sunset on 13-5-3.
+  Copyright (c) 2013年 sunset. All rights reserved.
+*/
+{
+  NCV61_UFTool_Telecom_CM = "China Mobile";
+  NCV61_UFTool_Telecom_CU = "China Unicom";
+  NCV61_UFTool_Telecom_CTC = "China Telecom" ;
+  NCV61_UFTool_Telecom_CTT = "China Tietong";
+  NCV61_UFTool_NOSIM = "SIM Not Inserted";
+  NCV61_UFTool_UNKNOWN = "Unknown";
+}

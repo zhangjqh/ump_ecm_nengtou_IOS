@@ -1,0 +1,15 @@
+/* 
+  btarget_Util_contact.strings
+  NCV61Localization
+
+  Created by sunset on 13-5-2.
+  Copyright (c) 2013年 sunset. All rights reserved.
+*/
+{
+  NCV61_AlertInfo= "Message";
+  NCV61_AlertInfoForPhoneAvailable ="The device does not support the phone function";
+  NCV61_Alert_Confirm = "OK";
+  NCV61_AlertIllegalPhoneNo ="Invalid phone number";
+  NCV61_AlertMessageAvailable = "The device does not support the SMS function";
+  NCV61_AlertNoMailSetting = "Please set the mailbox before sending";
+}

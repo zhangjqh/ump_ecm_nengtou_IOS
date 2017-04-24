@@ -1,0 +1,30 @@
+<Palette>
+    <Name>Origin</Name>
+    <Items>
+        <Count>6</Count>
+        <Entry>
+            <Color>255, 114, 124, 163</Color>
+            <Color>255, 77, 85, 117</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 159, 184, 205</Color>
+            <Color>255, 87, 131, 168</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 210, 218, 122</Color>
+            <Color>255, 175, 186, 52</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 250, 218, 122</Color>
+            <Color>255, 246, 188, 14</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 184, 132, 114</Color>
+            <Color>255, 139, 88, 70</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 142, 115, 106</Color>
+            <Color>255, 99, 80, 74</Color>
+        </Entry>
+    </Items>
+</Palette>

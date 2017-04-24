@@ -1,0 +1,4 @@
+#import "scdu_onerepeatdayrefController.h"
+@interface CustomUI_scdu_onerepeatdayrefController:scdu_onerepeatdayrefController
+
+@end

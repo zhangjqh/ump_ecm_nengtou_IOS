@@ -1,0 +1,20 @@
+{
+	webAddress = "Website";
+	telephone = "Phone";
+	sms = "SMS";
+	email = "Email";
+	cancel = "Cancel";
+	telephonefail = "Wrong phone number";
+	done = "OK";
+	title = "Personnel";
+	detail = "View Details";
+	image = "nav_bd.png";
+	navbackbtn = "nav_back_btn.png";
+	titleimage = "contact_Avatar.png";
+	telimage = "contact_celltel_ico.png";
+	mobileimage = "contact_cellmobile_ico.png";
+	emailimage = "contact_cellemail_ico.png";
+	cellPhone = "Cellphone";
+	telPhone = "Landline";
+  sendms = "SMS";
+}

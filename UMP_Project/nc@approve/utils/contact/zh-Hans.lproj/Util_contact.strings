@@ -1,0 +1,15 @@
+/* 
+  btarget_Util_contact.strings
+  NCV61Localization
+
+  Created by sunset on 13-5-2.
+  Copyright (c) 2013年 sunset. All rights reserved.
+*/
+{
+  NCV61_AlertInfo= "提示信息";
+  NCV61_AlertInfoForPhoneAvailable ="该设备不支持电话功能";
+  NCV61_Alert_Confirm = "确定";
+  NCV61_AlertIllegalPhoneNo ="不是有效的电话号码";
+  NCV61_AlertMessageAvailable = "该设备不支持短信功能";
+  NCV61_AlertNoMailSetting = "请设置邮箱再发送";
+}

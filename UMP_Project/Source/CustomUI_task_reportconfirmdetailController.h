@@ -1,0 +1,4 @@
+#import "task_reportconfirmdetailController.h"
+@interface CustomUI_task_reportconfirmdetailController:task_reportconfirmdetailController
+
+@end

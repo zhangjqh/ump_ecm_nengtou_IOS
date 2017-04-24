@@ -1,0 +1,11 @@
+/* 
+  component_Attention.strings
+  NCV61Localization
+
+  Created by sunset on 13-5-3.
+  Copyright (c) 2013年 sunset. All rights reserved.
+*/
+{
+  Cancel = "取消";
+  Edit ="编辑";
+}

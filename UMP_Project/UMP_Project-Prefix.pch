@@ -1,0 +1,25 @@
+//
+// Prefix header for all source files of the 'UMP_Project' target in the 'UMP_Project' project
+//
+ 
+#import <Availability.h>
+ 
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+ 
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #ifndef __has_attribute
+        #define __has_attribute(x) 0  // Compatibility with non-clang compilers
+    #endif
+ 
+    #if __has_attribute(objc_method_family)
+        #define BV_OBJC_METHOD_FAMILY_NONE __attribute__((objc_method_family(none)))
+    #else
+        #define BV_OBJC_METHOD_FAMILY_NONE
+    #endif
+#endif
+
+

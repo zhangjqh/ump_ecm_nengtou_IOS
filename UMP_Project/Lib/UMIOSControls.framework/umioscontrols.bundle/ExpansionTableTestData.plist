@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>detail2date</key>
+		<string>2013－04-12 John</string>
+		<key>detail2</key>
+		<string>还是迅速完成安排</string>
+		<key>detail1date</key>
+		<string>2013-02-12 John</string>
+		<key>detail1</key>
+		<string>迅速完成安排</string>
+		<key>finishnumber</key>
+		<string>3</string>
+		<key>progressvalue</key>
+		<real>0.4</real>
+		<key>taskstatus</key>
+		<string>已完成</string>
+		<key>name</key>
+		<string>已拒绝</string>
+		<key>date</key>
+		<string>2013-05-03 13:20:20&lt;John&gt;</string>
+	</dict>
+	<dict>
+		<key>detail2date</key>
+		<string>2013－04-12 Eric</string>
+		<key>detail2</key>
+		<string>还是迅速完成安排</string>
+		<key>detail1date</key>
+		<string>2013-02-12 Eric</string>
+		<key>detail1</key>
+		<string>迅速完成安排</string>
+		<key>finishnumber</key>
+		<string>2</string>
+		<key>progressvalue</key>
+		<real>0.8</real>
+		<key>taskstatus</key>
+		<string>已完成</string>
+		<key>name</key>
+		<string>已拒绝</string>
+		<key>date</key>
+		<string>2013-05-03 13:20:20&lt;Eric&gt;</string>
+	</dict>
+</array>
+</plist>

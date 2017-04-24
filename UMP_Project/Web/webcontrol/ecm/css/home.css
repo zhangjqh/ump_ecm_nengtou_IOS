@@ -1,0 +1,119 @@
+﻿html { 
+	overflow-x: hidden; 
+	overflow-y: auto; 
+}
+body {
+	margin: 0;
+}
+#base {
+	width: 100%;
+	height: 100%;
+}
+#homeDiv{
+	width: 100%;
+	height: 220px;
+}
+.top {
+	height: 25px;
+}
+.name{
+	height: 25px;
+	position: relative;
+	z-index: 998;
+	margin: 0 176px 0 auto;
+	color: #EEEEEE;
+	line-height: 16px;
+	font-size: 14px;
+	text-align: right;
+	top: -25px;
+}
+.portrait{
+	width: 76px;
+	height: 76px;
+	border-radius: 80px;
+	position: relative;
+	z-index: 999;
+	margin: 0 50px 0 auto;
+	color: #FFFFFF;
+	line-height: 16px;
+	font-size: 11px;
+	border: #FFD2D5 4px solid;
+	top: -84px;
+}
+.portraitimg{
+	height: 76px;
+	width: 76px;
+}
+.main {
+	height: 250px;
+}
+.nodepanel {
+	float: left;
+	width: 25%;
+	height: 100px;
+	padding-bottom: 10px;
+	display: block;
+}
+.nodeshow {
+	display: block;
+}
+.appnode{
+	height: 100%;
+	text-align: center;
+	padding-top: 10px;
+	border-right: #F5F5F5 solid 1px;
+	border-bottom: #F5F5F5 solid 1px;
+}
+.appnode:active {
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #F5F5F5;
+}
+.nodeimg {
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin: 15px auto;
+}
+.nodetitle {
+	font-size: 13px;
+	height: 15px;
+	display: block;
+}
+.corner{
+	width: 18px;
+	height: 18px;
+	border-radius: 9px;
+	background-color: #FF3C00;
+	position: relative;
+	left: 18px;
+	z-index: 100;
+	top: -74px;
+	margin: auto;
+	display: none;
+	color: #FFFFFF;
+	line-height: 18px;
+	font-size: 10px;
+    font-family:"Heiti SC";
+    font-weight:bolder;
+}
+.cornershow{
+	display: block;
+}
+.setRow{
+	width:auto;
+	height: 80px;
+}
+.setTxt{
+	
+}
+.setImg{
+	width: 8px;
+	heigth: 13px;
+}
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+<Palette>
+    <Name>Gray</Name>
+    <Items>
+        <Count>6</Count>
+        <Entry>
+            <Color>255, 221, 221, 221</Color>
+            <Color>255, 155, 155, 155</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 178, 178, 178</Color>
+            <Color>255, 125, 125, 125</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 150, 150, 150</Color>
+            <Color>255, 105, 105, 105</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 128, 128, 128</Color>
+            <Color>255, 90, 90, 90</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 95, 95, 95</Color>
+            <Color>255, 66, 66, 66</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 77, 77, 77</Color>
+            <Color>255, 54, 54, 54</Color>
+        </Entry>
+    </Items>
+</Palette>

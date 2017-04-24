@@ -1,0 +1,4 @@
+#import "msg_unreadmessagelistController.h"
+@interface CustomUI_msg_unreadmessagelistController:msg_unreadmessagelistController
+
+@end

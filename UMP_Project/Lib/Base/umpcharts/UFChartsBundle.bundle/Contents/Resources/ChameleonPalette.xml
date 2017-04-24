@@ -1,0 +1,54 @@
+<Palette>
+    <Name>Chameleon</Name>
+    <Items>
+        <Count>12</Count>
+        <Entry>
+            <Color>255, 0, 105, 191</Color>
+            <Color>255, 156, 220, 255</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 165, 139, 71</Color>
+            <Color>255, 255, 240, 178</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 160, 60, 127</Color>
+            <Color>255, 255, 178, 235</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 112, 158, 37</Color>
+            <Color>255, 231, 255, 171</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 62, 146, 216</Color>
+            <Color>255, 202, 247, 255</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 194, 171, 105</Color>
+            <Color>255, 255, 255, 216</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 195, 112, 168</Color>
+            <Color>255, 255, 216, 255</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 149, 187, 93</Color>
+            <Color>255, 254, 255, 212</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 142, 198, 239</Color>
+            <Color>255, 249, 255, 255</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 224, 209, 171</Color>
+            <Color>255, 255, 255, 254</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 222, 176, 207</Color>
+            <Color>255, 255, 254, 255</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 194, 216, 157</Color>
+            <Color>255, 255, 255, 252</Color>
+        </Entry>
+    </Items>
+</Palette>

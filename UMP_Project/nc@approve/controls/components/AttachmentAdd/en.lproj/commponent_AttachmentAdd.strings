@@ -1,0 +1,13 @@
+{
+	ok = OK;
+	GetAttachment = "Obtain Attachment";
+	ChoosePhotos = Photo;
+	ChooseLocalFiles = "Select the corresponding local file";
+	ChooseAttachments = "Select Attachment";
+	Return = Return;
+	FailToGetPhotos = "Failed to obtain picture";
+	ChooseCamera = Camera;
+	ActionSheetCancelBtn = Cancel;
+	cantPhoto = "Photo taking hardware not available";
+	cantSelect = "Photo library not available";
+}

@@ -1,0 +1,15 @@
+/*
+ btarget_Util_UFTool.strings
+ NCV61Localization
+ 
+ Created by sunset on 13-5-3.
+ Copyright (c) 2013年 sunset. All rights reserved.
+ */
+{
+	"NCV61_UFTool_Telecom_CM" = "\U4e2d\U570b\U79fb\U52d5";
+	"NCV61_UFTool_Telecom_CU" = "\U4e2d\U570b\U806f\U901a";
+	"NCV61_UFTool_Telecom_CTC" = "\U4e2d\U570b\U96fb\U4fe1";
+	"NCV61_UFTool_Telecom_CTT" = "\U4e2d\U570b\U9435\U901a";
+	"NCV61_UFTool_NOSIM" = "\U672a\U63d2\U5165 SIM";
+	"NCV61_UFTool_UNKNOWN" = "\U672a\U77e5";
+}

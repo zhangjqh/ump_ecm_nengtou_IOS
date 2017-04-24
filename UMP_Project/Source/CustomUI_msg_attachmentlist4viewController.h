@@ -1,0 +1,4 @@
+#import "msg_attachmentlist4viewController.h"
+@interface CustomUI_msg_attachmentlist4viewController:msg_attachmentlist4viewController
+
+@end

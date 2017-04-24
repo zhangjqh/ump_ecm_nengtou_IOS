@@ -1,0 +1,21 @@
+/* 
+  btarget_HTTPCommon.strings
+ 
+  Created by sunset on 12-11-26.
+  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+*/
+{
+  WA_HTTP_RQ_TIMEOUT="Request timeout!";
+  WA_HTTP_ILLEGALURL = "Invalid domain name!";
+  WA_HTTP_NULL_URL = "The server address is empty";
+  WA_HTTP_CONNERROR = "Failed to connect to the mobile server!";
+  WA_HTTP_CONNFAIL = "Cannot create request!";
+  WA_HTTP_NET_NA = "The current network is unavailable!";
+  WA_HTTP_WRONGURL = "Failed to obtain service. Service address error!";
+  WA_HTTP_TTNS = "Request exception. Please contact the administrator!";
+  WA_HTTP_NOSERVICE = "Cannot find the service";
+  WA_HTTP_WRONGPARAM = "System exception";
+  WA_HTTP_SESSIONTOUT = "Session has expired. Please log in again!";
+  WA_HTTP_SOTRELOGINFAIL = "Server connection lost. Please log in again!";
+  WA_HTTP_OCOAFLAG = "Request failed. Please try again or contact the administrator!";
+}

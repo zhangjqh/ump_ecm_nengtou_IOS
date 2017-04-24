@@ -1,0 +1,13 @@
+/* 
+  btarget_appupdate.strings
+  NC63Multiple
+
+  Created by sunset on 13-10-24.
+  Copyright (c) 2013年 yonyou. All rights reserved.
+*/
+{
+  alert_ok ="确定";
+  alert_cancel="取消";
+  alert_title= "软件升级";
+  alert_content="发现新版本,建议立即更新使用.";
+}

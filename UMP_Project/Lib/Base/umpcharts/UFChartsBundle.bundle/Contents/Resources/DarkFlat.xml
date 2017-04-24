@@ -1,0 +1,171 @@
+<Appearance>
+    <Name>DarkFlat</Name>
+    <PaletteName></PaletteName>
+    <IndicatorsPaletteName>Default</IndicatorsPaletteName>
+    <Chart>
+        <BorderColor>Black</BorderColor>
+        <BackColor>Black</BackColor>
+        <Legend>
+            <TextColor>White</TextColor>
+            <BackgroundColor>Black</BackgroundColor>
+            <BackgroundStyle>
+                <FillMode>Solid</FillMode>
+                <Options>null</Options>
+            </BackgroundStyle>
+            <BorderColor>Black</BorderColor>
+        </Legend>
+    </Chart>
+	<XYPlot>
+		<BackgroundColor>255, 66, 66, 66</BackgroundColor>
+		<BackgroundStyle>
+			<FillMode>Solid</FillMode>
+			<Options>null</Options>
+		</BackgroundStyle>
+		<BorderColor>255, 133, 133, 133</BorderColor>
+		<Axis>
+			<Color>255, 133, 133, 133</Color>
+            <InterlacedColor>255, 75, 75, 75</InterlacedColor>
+            <InterlacedFillStyle>
+				<FillMode>Solid</FillMode>
+				<Options>null</Options>
+			</InterlacedFillStyle>
+			<GridLines>
+				<Color>255, 91, 91, 91</Color>
+				<MinorColor>255, 82, 82, 82</MinorColor>
+			</GridLines>
+			<AxisTitle>
+				<TextColor>White</TextColor>
+			</AxisTitle>
+			<AxisLabel>
+				<TextColor>White</TextColor>
+			</AxisLabel>
+		</Axis>
+	</XYPlot>
+    <RadarPlot>
+        <BackgroundColor>255, 62, 62, 62</BackgroundColor>
+        <BackgroundStyle>
+            <FillMode>Solid</FillMode>
+            <Options>null</Options>
+        </BackgroundStyle>
+        <BorderColor>255, 133, 133, 133</BorderColor>
+        <Axis>
+            <Color>255, 133, 133, 133</Color>
+            <InterlacedColor>255, 75, 75, 75</InterlacedColor>
+            <InterlacedFillStyle>
+                <FillMode>Solid</FillMode>
+                <Options>null</Options>
+            </InterlacedFillStyle>
+            <GridLines>
+                <Color>255, 133, 133, 133</Color>
+                <MinorColor>255, 86, 86, 86</MinorColor>
+            </GridLines>
+            <AxisLabel>
+                <TextColor>White</TextColor>
+            </AxisLabel>
+        </Axis>
+    </RadarPlot>
+	<ConstantLine>
+		<Color>White</Color>
+        <DashStyle>Solid</DashStyle>
+        <Title>
+            <TextColor>White</TextColor>
+        </Title>
+    </ConstantLine>
+    <Strip>
+		<Color>255, 40, 40, 40</Color>
+		<FillStyle>
+			<FillMode>Solid</FillMode>
+			<Options></Options>
+		</FillStyle>
+	</Strip>
+	<ChartTitle>
+		<TextColor>White</TextColor>
+	</ChartTitle>
+    <TextAnnotation>
+        <BackColor>255, 0, 0, 0</BackColor>
+        <BorderColor>255, 255, 255, 255</BorderColor>
+        <FillStyle>
+            <FillMode>Solid</FillMode>
+            <Options></Options>
+        </FillStyle>
+        <TextColor>255, 255, 255, 255</TextColor>
+    </TextAnnotation>
+    <ImageAnnotation>
+        <BackColor>255, 0, 0, 0</BackColor>
+        <BorderColor>255, 255, 255, 255</BorderColor>
+        <FillStyle>
+            <FillMode>Solid</FillMode>
+            <Options></Options>
+        </FillStyle>
+    </ImageAnnotation>
+    <BarSeriesView>
+        <BorderColor>White</BorderColor>
+        <FillStyle>
+			<FillMode>Solid</FillMode>
+			<Options></Options>
+		</FillStyle>
+        <SeriesLabel>
+            <BackColor>0, 255, 255, 255</BackColor>
+            <TextColor>White</TextColor>
+            <BorderColor>0, 255, 255, 255</BorderColor>
+            <ConnectorColor>White</ConnectorColor>
+        </SeriesLabel>
+	</BarSeriesView>
+	<PointSeriesView>
+        <BorderColor>Empty</BorderColor>
+        <Marker>
+			<FillStyle>
+				<FillMode>Solid</FillMode>
+				<Options></Options>
+			</FillStyle>
+		</Marker>
+        <SeriesLabel>
+            <BackColor>0, 255, 255, 255</BackColor>
+            <TextColor>White</TextColor>
+            <BorderColor>0, 255, 255, 255</BorderColor>
+            <ConnectorColor>White</ConnectorColor>
+        </SeriesLabel>
+	</PointSeriesView>
+    <LineSeriesView>
+        <BorderColor>Empty</BorderColor>
+        <Marker>
+            <FillStyle>
+                <FillMode>Solid</FillMode>
+                <Options></Options>
+            </FillStyle>
+        </Marker>
+    </LineSeriesView>
+	<AreaSeriesView>
+		<BorderColor>Empty</BorderColor>
+		<FillStyle>
+			<FillMode>Solid</FillMode>
+			<Options></Options>
+		</FillStyle>
+	</AreaSeriesView>
+	<PieSeriesView>
+		<BorderColor>White</BorderColor>
+		<FillStyle>
+			<FillMode>Solid</FillMode>
+			<Options></Options>
+		</FillStyle>
+        <SeriesLabel>
+            <BackColor>0, 255, 255, 255</BackColor>
+            <TextColor>White</TextColor>
+            <BorderColor>0, 255, 255, 255</BorderColor>
+            <ConnectorColor>White</ConnectorColor>
+        </SeriesLabel>
+    </PieSeriesView>
+    <FunnelSeriesView>
+        <BorderColor>White</BorderColor>
+        <FillStyle>
+            <FillMode>Solid</FillMode>
+            <Options></Options>
+        </FillStyle>
+        <SeriesLabel>
+            <BackColor>0, 255, 255, 255</BackColor>
+            <TextColor>White</TextColor>
+            <BorderColor>0, 255, 255, 255</BorderColor>
+            <ConnectorColor>White</ConnectorColor>
+        </SeriesLabel>
+    </FunnelSeriesView>
+</Appearance>

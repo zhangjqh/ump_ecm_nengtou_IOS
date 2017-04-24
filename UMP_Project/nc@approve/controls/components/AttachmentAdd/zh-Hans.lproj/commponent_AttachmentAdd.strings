@@ -1,0 +1,13 @@
+{
+	ok = "\U786e\U5b9a";
+	GetAttachment = "\U9644\U4ef6\U83b7\U53d6";
+	ChoosePhotos = "\U7167\U7247";
+	ChooseLocalFiles = "\U9009\U53d6\U76f8\U5e94\U672c\U5730\U6587\U4ef6";
+	ChooseAttachments = "\U9644\U4ef6\U9009\U62e9";
+	Return = "\U8fd4\U56de";
+	FailToGetPhotos = "\U83b7\U53d6\U56fe\U7247\U5931\U8d25";
+	ChooseCamera = "\U62cd\U7167";
+	ActionSheetCancelBtn = "\U53d6\U6d88";
+	cantPhoto = "\U7167\U76f8\U786c\U4ef6\U4e0d\U53ef\U7528";
+	cantSelect = "\U76f8\U518c\U4e0d\U53ef\U7528";
+}

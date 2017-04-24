@@ -1,0 +1,13 @@
+{
+	attachmentSizeOver = "\U9644\U4ef6\U8d85\U8fc7";
+	openinpc = "\U8bf7\U5230PC\U7aef\U67e5\U770b";
+	Wait = "\U6570\U636e\U52a0\U8f7d\U4e2d...";
+	openAttachError = "\U6253\U5f00\U9644\U4ef6\U5931\U8d25";
+	AttachFormatError = "\U9644\U4ef6\U683c\U5f0f\U65e0\U6cd5\U6253\U5f00,\U8bf7\U5230PC\U7aef\U67e5\U770b";
+	AttReView = "\U9644\U4ef6\U6d4f\U89c8";
+	Comfirm = "\U786e\U5b9a";
+	ok = "\U786e\U5b9a";
+	back = "\U8fd4\U56de";
+	confirmdownload = "\U8be5\U6587\U4ef6\U8f83\U5927\Uff0c\U786e\U5b9a\U7ee7\U7eed\U67e5\U770b\Uff1f";
+	cancle = "\U53d6\U6d88";
+}

@@ -1,0 +1,18 @@
+/* 
+  component_PullingRefreshTV.strings
+  NCV61Localization
+
+  Created by sunset on 13-5-3.
+  Copyright (c) 2013年 sunset. All rights reserved.
+*/
+{
+  Refreshing="正在刷新";
+  Loading ="正在加载";
+  ReleaseToRefresh = "释放刷新";
+  ReleaseToLoad = "释放加载更多";
+  PullToRefresh ="下拉刷新";
+  ScrollUpToLoadMore = "上拉加载更多";
+  LatestData = "已为最新数据";
+  LastRefresh ="最后更新";
+  ScrollUpToLoad ="上拉加载";
+}

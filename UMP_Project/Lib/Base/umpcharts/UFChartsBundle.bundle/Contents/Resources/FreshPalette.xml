@@ -1,0 +1,55 @@
+<Palette>
+    <Name>Fresh</Name>
+    <Items>
+        <Count>12</Count>
+        <Entry>
+            <Color>255, 253, 176, 44</Color>
+            <Color2>255, 156, 220, 255</Color2>
+        </Entry>
+        <Entry>
+            <Color>255, 248, 22, 85</Color>
+            <Color2>255, 255, 240, 178</Color2>
+        </Entry>
+        <Entry>
+            <Color>255, 188, 78, 201</Color>
+            <Color2>255, 255, 178, 235</Color2>
+        </Entry>
+        <Entry>
+            <Color>255, 38, 148, 225</Color>
+            <Color2>255, 231, 255, 171</Color2>
+        </Entry>
+        <Entry>
+            <Color>255, 140, 233, 153</Color>
+            <Color2>255, 253, 124, 66</Color2>
+        </Entry>
+        <Entry>
+            <Color>255, 253, 124, 66</Color>
+            <Color2>255, 255, 255, 252</Color2>
+        </Entry>
+        <Entry>
+            <Color>255, 247, 31, 168</Color>
+            <Color2>255, 255, 255, 216</Color2>
+        </Entry>
+        <Entry>
+            <Color>255, 144, 71, 204</Color>
+            <Color2>255, 255, 216, 255</Color2>
+        </Entry>
+        <Entry>
+            <Color>255, 54, 203, 243</Color>
+            <Color2>255, 254, 255, 212</Color2>
+        </Entry>
+        <Entry>
+            <Color>255, 157, 231, 82</Color>
+            <Color2>255, 249, 255, 255</Color2>
+        </Entry>
+        <Entry>
+            <Color>255, 255, 228, 59</Color>
+            <Color2>255, 255, 255, 254</Color2>
+        </Entry>
+        <Entry>
+            <Color>255, 248, 42, 187</Color>
+            <Color2>255, 255, 254, 255</Color2>
+        </Entry>
+       
+    </Items>
+</Palette>

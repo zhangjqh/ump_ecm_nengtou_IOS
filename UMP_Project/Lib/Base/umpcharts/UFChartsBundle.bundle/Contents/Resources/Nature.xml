@@ -1,0 +1,201 @@
+<Appearance>
+    <Name>Nature</Name>
+    <PaletteName>Nature Colors</PaletteName>
+    <IndicatorsPaletteName>Default</IndicatorsPaletteName>
+    <Chart>
+        <BorderColor>255, 140, 116, 100</BorderColor>
+        <BackColor>White</BackColor>
+        <Legend>
+            <TextColor>Black</TextColor>
+            <BackgroundColor>255, 252, 248, 241</BackgroundColor>
+            <BackgroundStyle>
+                <FillMode>Solid</FillMode>
+                <Options>null</Options>
+            </BackgroundStyle>
+            <BorderColor>255, 215, 199, 165</BorderColor>
+        </Legend>
+    </Chart>
+    <XYPlot>
+        <BackgroundColor>255, 244, 234, 213</BackgroundColor>
+        <BackgroundStyle>
+            <FillMode>Gradient</FillMode>
+            <Options>
+                <Color2>255, 252, 248, 241</Color2>
+                <RectangleGradientMode>BottomRightToTopLeft</RectangleGradientMode>
+            </Options>
+        </BackgroundStyle>
+        <BorderColor>255, 215, 199, 165</BorderColor>
+        <Axis>
+            <Color>255, 125, 94, 32</Color>
+            <InterlacedColor>255, 250, 245, 235</InterlacedColor>
+            <InterlacedFillStyle>
+                <FillMode>Gradient</FillMode>
+                <Options>
+                    <Color2>255, 254, 252, 248</Color2>
+                    <RectangleGradientMode>BottomRightToTopLeft</RectangleGradientMode>
+                </Options>
+            </InterlacedFillStyle>
+            <GridLines>
+                <Color>255, 227, 216, 192</Color>
+                <MinorColor>255, 240, 232, 214</MinorColor>
+            </GridLines>
+            <AxisTitle>
+                <TextColor>Black</TextColor>
+            </AxisTitle>
+            <AxisLabel>
+                <TextColor>Black</TextColor>
+            </AxisLabel>      
+        </Axis>
+    </XYPlot>
+    <RadarPlot>
+        <BackgroundColor>255, 244, 234, 213</BackgroundColor>
+        <BackgroundStyle>
+            <FillMode>Gradient</FillMode>
+            <Options>
+                <Color2>255, 252, 248, 241</Color2>
+                <PolygonGradientMode>BottomRightToTopLeft</PolygonGradientMode>
+            </Options>
+        </BackgroundStyle>
+        <BorderColor>255, 215, 199, 165</BorderColor>
+        <Axis>
+            <Color>255, 125, 94, 32</Color>
+            <InterlacedColor>255, 250, 245, 235</InterlacedColor>
+            <InterlacedFillStyle>
+                <FillMode>Gradient</FillMode>
+                <Options>
+                    <Color2>255, 254, 252, 248</Color2>
+                    <PolygonGradientMode>BottomRightToTopLeft</PolygonGradientMode>
+                </Options>
+            </InterlacedFillStyle>
+            <GridLines>
+                <Color>255, 227, 216, 192</Color>
+                <MinorColor>255, 240, 232, 214</MinorColor>
+            </GridLines>
+            <AxisLabel>
+                <TextColor>Black</TextColor>
+            </AxisLabel>
+        </Axis>
+    </RadarPlot>
+    <ConstantLine>
+        <Color>255, 125, 94, 32</Color>
+        <DashStyle>Solid</DashStyle>
+        <Title>
+            <TextColor>Black</TextColor>
+        </Title>
+    </ConstantLine>
+    <Strip>
+        <Color>255, 225, 236, 198</Color>
+        <FillStyle>
+            <FillMode>Gradient</FillMode>
+            <Options>
+                <Color2>255, 236, 244, 216</Color2>
+                <RectangleGradientMode>BottomRightToTopLeft</RectangleGradientMode>
+            </Options>
+        </FillStyle>
+    </Strip>
+    <ChartTitle>
+        <TextColor>Black</TextColor>
+    </ChartTitle>
+    <TextAnnotation>
+        <BackColor>255, 255, 255, 255</BackColor>
+        <BorderColor>255, 125, 94, 32</BorderColor>
+        <FillStyle>
+            <FillMode>Solid</FillMode>
+            <Options></Options>
+        </FillStyle>
+        <TextColor>255, 0, 0, 0</TextColor>
+    </TextAnnotation>
+    <ImageAnnotation>
+        <BackColor>255, 255, 255, 255</BackColor>
+        <BorderColor>255, 125, 94, 32</BorderColor>
+        <FillStyle>
+            <FillMode>Solid</FillMode>
+            <Options></Options>
+        </FillStyle>
+    </ImageAnnotation>
+    <BarSeriesView>
+        <BorderColor>Empty</BorderColor>
+        <FillStyle>
+            <FillMode>Gradient</FillMode>
+            <Options>
+                <Color2>Empty</Color2>
+                <RectangleGradientMode>RightToLeft</RectangleGradientMode>
+            </Options>
+        </FillStyle>
+        <SeriesLabel>
+            <BackColor>White</BackColor>
+            <TextColor>Empty</TextColor>
+            <BorderColor>Empty</BorderColor>
+            <ConnectorColor>Empty</ConnectorColor>
+        </SeriesLabel>
+    </BarSeriesView>
+    <PointSeriesView>
+        <BorderColor>Empty</BorderColor>
+        <Marker>
+            <FillStyle>
+                <FillMode>Gradient</FillMode>
+                <Options>
+                    <Color2>Empty</Color2>
+                    <PolygonGradientMode>BottomRightToTopLeft</PolygonGradientMode>
+                </Options>
+            </FillStyle>
+        </Marker>
+        <SeriesLabel>
+            <BackColor>White</BackColor>
+            <TextColor>Empty</TextColor>
+            <BorderColor>Empty</BorderColor>
+            <ConnectorColor>Empty</ConnectorColor>
+        </SeriesLabel>
+    </PointSeriesView>
+    <LineSeriesView>
+        <BorderColor>Empty</BorderColor>
+        <Marker>
+            <FillStyle>
+                <FillMode>Gradient</FillMode>
+                <Options>
+                    <Color2>Empty</Color2>
+                    <PolygonGradientMode>BottomRightToTopLeft</PolygonGradientMode>
+                </Options>
+            </FillStyle>
+        </Marker>
+    </LineSeriesView>
+    <AreaSeriesView>
+        <BorderColor>Empty</BorderColor>
+        <FillStyle>
+            <FillMode>Solid</FillMode>
+            <Options></Options>
+        </FillStyle>
+    </AreaSeriesView>
+    <PieSeriesView>
+        <BorderColor>40, 255, 255, 255</BorderColor>
+        <FillStyle>
+            <FillMode>Gradient</FillMode>
+            <Options>
+                <Color2>Empty</Color2>
+                <PolygonGradientMode>BottomRightToTopLeft</PolygonGradientMode>
+            </Options>
+        </FillStyle>
+        <SeriesLabel>
+            <BackColor>White</BackColor>
+            <TextColor>Empty</TextColor>
+            <BorderColor>Empty</BorderColor>
+            <ConnectorColor>Empty</ConnectorColor>
+        </SeriesLabel>
+    </PieSeriesView>
+    <FunnelSeriesView>
+        <BorderColor>40, 0, 0, 0</BorderColor>
+        <FillStyle>
+            <FillMode>Gradient</FillMode>
+            <Options>
+                <Color2>Empty</Color2>
+                <PolygonGradientMode>RightToLeft</PolygonGradientMode>
+            </Options>
+        </FillStyle>
+        <SeriesLabel>
+            <BackColor>White</BackColor>
+            <TextColor>Empty</TextColor>
+            <BorderColor>Empty</BorderColor>
+            <ConnectorColor>Empty</ConnectorColor>
+        </SeriesLabel>
+    </FunnelSeriesView>
+</Appearance>

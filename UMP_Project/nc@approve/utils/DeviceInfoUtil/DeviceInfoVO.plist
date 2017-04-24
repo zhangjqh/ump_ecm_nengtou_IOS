@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>iPlatform</string>
+	<string>iMacAddress</string>
+	<string>iAppVersion</string>
+	<string>iOperator</string>
+	<string>iLanage</string>
+	<string>iImei</string>
+	<string>iOSversion</string>
+	<string>iImsi</string>
+	<string>iScreensi</string>
+	<string>iDevicetype</string>
+	<string>iResolution</string>
+</array>
+</plist>

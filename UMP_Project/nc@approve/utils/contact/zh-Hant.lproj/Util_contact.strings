@@ -1,0 +1,8 @@
+{
+	NCV61_AlertInfo = "\U63d0\U793a\U4fe1\U606f";
+	NCV61_AlertInfoForPhoneAvailable = "\U8a72\U8a2d\U5099\U4e0d\U652f\U6301\U96fb\U8a71\U529f\U80fd";
+	NCV61_Alert_Confirm = "\U78ba\U5b9a";
+	NCV61_AlertIllegalPhoneNo = "\U4e0d\U662f\U6709\U6548\U7684\U96fb\U8a71\U865f\U78bc";
+	NCV61_AlertMessageAvailable = "\U8a72\U8a2d\U5099\U4e0d\U652f\U6301\U77ed\U4fe1\U529f\U80fd";
+	NCV61_AlertNoMailSetting = "\U8acb\U8a2d\U7f6e\U90f5\U7bb1\U518d\U767c\U9001";
+}

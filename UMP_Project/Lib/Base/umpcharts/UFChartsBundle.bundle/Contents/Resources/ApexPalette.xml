@@ -1,0 +1,30 @@
+<Palette>
+    <Name>Apex</Name>
+    <Items>
+        <Count>6</Count>
+        <Entry>
+            <Color>255, 206, 185, 102</Color>
+            <Color>255, 163, 141, 52</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 156, 176, 132</Color>
+            <Color>255, 110, 131, 84</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 107, 177, 201</Color>
+            <Color>255, 58, 132, 158</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 101, 133, 207</Color>
+            <Color>255, 51, 85, 164</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 126, 107, 201</Color>
+            <Color>255, 78, 58, 158</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 163, 121, 187</Color>
+            <Color>255, 117, 73, 143</Color>
+        </Entry>
+    </Items>
+</Palette>

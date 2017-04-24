@@ -1,0 +1,18 @@
+/* 
+  component_PullingRefreshTV.strings
+  NCV61Localization
+
+  Created by sunset on 13-5-3.
+  Copyright (c) 2013年 sunset. All rights reserved.
+*/
+{
+  Refreshing="Refreshing";
+  Loading ="Loading";
+  ReleaseToRefresh = "Release Refreshing";
+  ReleaseToLoad = "Release Loading More";
+  PullToRefresh ="Scroll down to refresh";
+  ScrollUpToLoadMore = "Scroll up to load more";
+  LatestData = "The data are already the latest";
+  LastRefresh ="Last Update";
+  ScrollUpToLoad ="Scroll Up to Load";
+}

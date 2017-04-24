@@ -1,0 +1,4 @@
+#import "task_mainviewthreeforoneController.h"
+@interface CustomUI_task_mainviewthreeforoneController:task_mainviewthreeforoneController
+
+@end

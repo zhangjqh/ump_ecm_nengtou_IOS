@@ -1,0 +1,13 @@
+{
+	attachmentSizeOver = "The attachment exceeds limit";
+	openinpc = "Please view the details on PC!";
+	Wait = "Loading data\U2026";
+	openAttachError = "Failed to open the attachment";
+	AttachFormatError = "The attachment format cannot be opened. Please view the details on PC";
+	AttReView = "Browse Attachments";
+	Comfirm = OK;
+	back = return;
+	confirmdownload = "The attachment too large, Please view the details on PC";
+	cancle = cancle;
+  ok = ok;
+}

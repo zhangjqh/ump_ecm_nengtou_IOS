@@ -1,0 +1,20 @@
+{
+	webAddress = "\U6253\U5f00\U7f51\U5740";
+	telephone = "\U6253\U7535\U8bdd";
+	sms = "\U53d1\U77ed\U4fe1";
+	email = "\U53d1\U90ae\U4ef6";
+	cancel = "\U53d6\U6d88";
+	telephonefail = "\U7535\U8bdd\U53f7\U7801\U9519\U8bef";
+	done = "\U786e\U5b9a";
+	title = "\U4eba\U5458";
+	detail = "\U67e5\U770b\U8be6\U60c5";
+	image = "nav_bd.png";
+	navbackbtn = "nav_back_btn.png";
+	titleimage = "contact_Avatar.png";
+	telimage = "contact_celltel_ico.png";
+	mobileimage = "contact_cellmobile_ico.png";
+	emailimage = "contact_cellemail_ico.png";
+	cellPhone = "\U547c\U53eb\U624b\U673a";
+	telPhone = "\U547c\U53eb\U5ea7\U673a";
+	sendms = "\U53d1\U9001\U77ed\U4fe1";
+}

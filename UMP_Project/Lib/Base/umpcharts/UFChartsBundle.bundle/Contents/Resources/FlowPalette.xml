@@ -1,0 +1,30 @@
+<Palette>
+    <Name>Flow</Name>
+    <Items>
+        <Count>6</Count>
+        <Entry>
+            <Color>255, 15, 111, 198</Color>
+            <Color>255, 10, 78, 139</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 0, 157, 217</Color>
+            <Color>255, 0, 110, 152</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 11, 208, 217</Color>
+            <Color>255, 8, 146, 152</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 16, 207, 155</Color>
+            <Color>255, 11, 145, 108</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 124, 202, 98</Color>
+            <Color>255, 79, 157, 53</Color>
+        </Entry>
+        <Entry>
+            <Color>255, 165, 194, 73</Color>
+            <Color>255, 118, 140, 47</Color>
+        </Entry>
+    </Items>
+</Palette>

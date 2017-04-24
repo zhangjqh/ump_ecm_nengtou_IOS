@@ -1,0 +1,10 @@
+{
+	SearchAll = "\U5168\U90e8";
+	SearchOk = "\U78ba\U5b9a";
+	NoSupplies = "\U6c92\U6709\U7b26\U5408\U689d\U4ef6\U7684\U6578\U64da";
+	LoadData = "\U6578\U64da\U52a0\U8f09\U4e2d...";
+	SearchTitle = "\U641c\U7d22\U7269\U6599";
+	NoMoreResult = "\U6c92\U6709\U66f4\U591a\U6578\U64da";
+	DataAddOverPage = "\U6578\U64da\U932f\U8aa4";
+	NoData = "\U7576\U524d\U9801\U9762\U7121\U6578\U64da";
+}

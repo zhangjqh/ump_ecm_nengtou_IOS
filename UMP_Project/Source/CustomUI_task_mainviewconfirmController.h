@@ -1,0 +1,4 @@
+#import "task_mainviewconfirmController.h"
+@interface CustomUI_task_mainviewconfirmController:task_mainviewconfirmController
+
+@end

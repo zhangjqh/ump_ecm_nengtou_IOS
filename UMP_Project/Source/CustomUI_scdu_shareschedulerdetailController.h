@@ -1,0 +1,4 @@
+#import "scdu_shareschedulerdetailController.h"
+@interface CustomUI_scdu_shareschedulerdetailController:scdu_shareschedulerdetailController
+
+@end

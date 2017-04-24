@@ -1,0 +1,11 @@
+{
+	Refreshing = "\U6b63\U5728\U5237\U65b0";
+	Loading = "\U6b63\U5728\U52a0\U8f09";
+	ReleaseToRefresh = "\U91cb\U653e\U5237\U65b0";
+	ReleaseToLoad = "\U91cb\U653e\U52a0\U8f09\U66f4\U591a";
+	PullToRefresh = "\U4e0b\U62c9\U5237\U65b0";
+	ScrollUpToLoadMore = "\U4e0a\U62c9\U52a0\U8f09\U66f4\U591a";
+	LatestData = "\U5df2\U70ba\U6700\U65b0\U6578\U64da";
+	LastRefresh = "\U6700\U5f8c\U66f4\U65b0";
+	ScrollUpToLoad = "\U4e0a\U62c9\U52a0\U8f09";
+}

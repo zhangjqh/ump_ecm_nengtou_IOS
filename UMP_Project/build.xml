@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name ="buildipa" default="package" basedir=".">
+
+	  <!-- build files  -->	  	
+        <property name="classes.dir" value="Classes"/>	
+	    <property name="resources.dir" value="Resources"/>
+	    <property name="plugins.dir" value="Plugins"/>
+	    <property name="xcode.build.dir" value="../build" />   
+	   <!-- can use property -->
+	 
+	    <!-- java home -->
+	    <condition property="java.home" value="${java.home.windows}" else="${java.home.mac}">
+			<os family="windows" />
+		</condition>
+		<!-- xcode home -->
+		<property name="xcodebuild" value="xcodebuild"/>
+		<property name="xcrun" value="xcrun"/>
+	    <property name="sdkname" value="iphoneos8.1"/>
+	    <property name="targets" value="5.1"/>
+	    <property name="arch" value="armv7 arm64"/>
+	
+	  <!--  project -->
+	  <property name="app_name" value="demo" />
+	  <property name="app_id" value="demo" />
+	  <property name="template_name" value="webtest" />
+	  <property name="output.dir" value="output" />
+	  <property name="output.temp.dir" value="${output.dir}/temp" />   
+	  <property name="output.install.dir" value="${output.dir}/install" />   
+	  <property name="output.projectfiles.dir" value="${output.dir}/projectfiles" /> 
+	  <property name="input.dir" value="input" />  
+	  <property name="wwwfilesname" value="html" />   
+	  <property name="www.base.dir" value="www" /> 
+	  <property name="build.app.dir" value="Release-iphoneos" /> 
+	  <property name="root.path" value="../${output.dir}" /> 
+	  
+	  <property name="www.os.dir" value="project"/>
+	  <property name="www.native.dir" value="native"/>
+	  <property name="www.res.dir" value="resources"/>
+	  <property name="www.framework.dir" value="framework"/>
+	  <property name="www.source.dir" value="source"/>
+	  <property name="icon.dir" value="icons"/>
+	  <property name="icon.name" value="icon.png"/>
+	  
+	  <!-- extends --> 
+	  
+	  <condition property="isWindows">  
+      <os family="windows" />  
+      </condition>  
+
+	<!--
+	 | CLEAN:
+	 |
+	 | Cleans up the output directory for this project.
+	 +-->
+	<target name="clean" description="delete folder">
+	  <echo>Initializing all output directories...</echo>
+		<delete>
+		  <fileset dir="." includes="*.app"/>
+		  <fileset dir="." includes="*.ipa"/>
+		</delete>
+		<delete dir="${wwwfilesname}" />	
+		<delete includeEmptyDirs="true">
+    	<fileset dir="${output.dir}" includes="**/*.*"/>
+    </delete>
+    <delete includeEmptyDirs="true">
+    	<fileset dir="${xcode.build.dir}" includes="**/*.*"/>
+    </delete>
+   
+	</target>
+	
+	
+	<!--
+     |
+     | PRE INIT:
+     |
+     +-->
+	<target name="pre_init" depends="clean">
+		 
+  </target>
+	
+	<!--
+     |
+     | INIT:
+     |
+     | Make directory for this project .
+     +-->
+	<target name="init" depends="pre_init">
+		    <mkdir dir="${wwwfilesname}"/>		
+			<mkdir dir="${output.temp.dir}"/>	
+			<mkdir dir="${output.install.dir}"/>	
+			<mkdir dir="${output.projectfiles.dir}"/>	
+    </target>
+    
+  <!--
+     |
+     | COPY:
+     |
+     | Copy files for this project .
+     +-->
+	<target name="copy" >
+	
+		 <copy todir="./${wwwfilesname}">
+		   <fileset dir="${www.base.dir}">
+				<include name="**/*.*"/>
+			</fileset>
+		 </copy>
+		 
+		 <copy  todir="."  overwrite="true" > <!-- 复制ump工程的native 目录文件到工程模板的当前目录中  -->
+		    <fileset dir="${www.os.dir}/${www.native.dir}" />
+		 </copy>
+		 
+		 <copy  todir=".."  overwrite="true" > <!-- 复制ump工程的图片文件  -->
+		    <fileset dir="${basedir}" >
+		       <include name="*.png"/>
+		    </fileset>
+		 </copy>
+		
+		 
+		 
+  </target>   
+	
+	<!--
+     |
+     | pre_compile:
+     |
+     +-->
+	<target name="pre_compile" depends="copy">
+		
+    </target>
+	
+	<!--
+     |
+     | COMPILE:
+     |
+     | 编译文件
+     +-->
+	
+	<!--使用xcodebuild进行编译 xcodebuild -sdk iphoneos6.1 -configuration Distribution-->
+	<target name="compile" depends="pre_compile">
+		<echo>xcode clean build</echo>
+	</target>
+	
+	
+	
+	<!--
+     |
+     | pre_release:
+     |
+     | 
+     +-->
+	
+	<!--pre_release-->
+	<target name="pre_release">
+	  
+	</target>	
+	
+	
+	
+	<!--
+     |
+     | RELEASE:
+     | xcrun -sdk iphoneos PackageApplication -v "${release_builddir}/A0A000.nc.yonyou.com.app" -o "${output_url}/${ipa_name}.ipa" 
+     |
+     | 清理文件
+     +-->
+	
+	<!--publish-->
+	<target name="release" depends="pre_release">
+	    <echo>xcode clean build</echo>
+		<exec dir=".." executable="${xcodebuild}" failonerror="true">
+		<arg value="clean" />
+		<arg value="-sdk"/>
+		<arg value="${sdkname}"/>
+		</exec>
+	
+	    <echo>xcode compile build</echo>
+		<exec dir=".." executable="${xcodebuild}" failonerror="true">
+		<arg value="-sdk"/>
+		<arg value="${sdkname}"/>
+		<arg value="-configuration"/>
+		<arg value="Release"/>
+		</exec>
+	
+	  <echo>copy app to base dir</echo>
+		<echo>xcrun for ipa</echo>
+		<exec executable="${xcrun}" failonerror="true">
+		<arg value="-sdk" />
+		<arg value="${sdkname}"/>
+		<arg value="PackageApplication" />
+		<arg value="-v" />
+		<arg value="${xcode.build.dir}/${build.app.dir}/${template_name}.app"/>
+		<arg value="-o" />
+		<arg value="${basedir}/${template_name}.ipa"/>
+		</exec>
+	 
+	</target>	
+	
+	<!--
+     |
+     | pre_package:
+     |
+     | 
+     +-->
+	
+	<!-- pre_package -->
+	<target name="pre_package" >
+	  
+	</target>	
+	
+	
+	
+	<!--
+     |
+     | DEPLOY:
+     | 负责apk和project压缩文件到指定目录中
+     | 
+     | 
+     +-->
+	
+	<!--package-->
+	<target name="package" depends="pre_package">
+	  <echo>Delete unuse files...</echo>
+		<delete >
+    	<fileset dir="." includes="*.vm,*.ftl" />
+    </delete>
+     <delete >
+    	<fileset dir="${root.path}" includes="*.zip,*.rar"  />
+     </delete>	 
+	  <echo> Rename Copy deploy files to dest</echo>    
+	   <move file="${basedir}/${template_name}.plist" tofile="${basedir}/A0A000.nc.yonyou.com.plist" />
+	   <move file="${basedir}/${template_name}.ipa" tofile="${basedir}/A0A000.nc.yonyou.com.ipa" />
+	   <copy todir="${output.install.dir}">
+		  <fileset dir="${basedir}">
+				<include name="**/*.ipa"/>
+				<include name="**/A0A000.nc.yonyou.com.plist"/>
+			</fileset>
+	   </copy>
+	   
+	   <copy todir="${output.install.dir}">
+		  <fileset dir="${resources.dir}/${icon.dir}">
+				<include name="**/${icon.name}"/>
+			</fileset>
+	   </copy>
+		 
+		 
+		 <zip destfile="${output.projectfiles.dir}/A0A000.nc.yonyou.com.zip" update="true">
+		   <fileset dir="${basedir}">
+				<exclude name="**/*.ipa"/>
+				<exclude name="**/*build*.xml"/>
+				<exclude name="**/A0A000.nc.yonyou.com.plist"/>
+			</fileset>
+		 </zip>
+		 
+		<delete includeEmptyDirs="true">
+               <fileset dir="${input.dir}"/>
+        </delete>
+		
+		<echo>Package is finished!!!</echo>
+	</target>	
+	
+</project>

@@ -1,0 +1,25 @@
+#import "CustomUI_msg_unreadmessagelistController.h"
+
+@implementation CustomUI_msg_unreadmessagelistController
+
+- (void)loadView
+{
+	[super loadView];
+}
+
+- (void)viewDidLoad
+{
+	[super viewDidLoad];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+	[super viewWillAppear:animated];
+}
+
+- (void)viewDidUnload
+{
+	[super viewDidUnload];
+}
+
+@end

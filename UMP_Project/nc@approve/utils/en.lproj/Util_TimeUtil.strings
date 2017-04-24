@@ -1,0 +1,13 @@
+{
+	"NC61_Time_Minutes" = Minutes;
+	"NC61_Time_Hours" = Hours;
+	"NC61_Time_Days" = Days;
+	"NC61_Time_Ago" = Before;
+	1 = "\U661f\U671f\U65e5";
+	2 = "\U661f\U671f\U4e00";
+	3 = "\U661f\U671f\U4e8c";
+	4 = "\U661f\U671f\U4e09";
+	5 = "\U661f\U671f\U56db";
+	6 = "\U661f\U671f\U4e94";
+	7 = "\U661f\U671f\U516d";
+}
