@@ -9,6 +9,7 @@
 #import "WATaskListDef.h"
 #import "WASpinnerView.h"
 #import "WAButton.h"
+#import "WABaseAppDelegate.h"
 
 @implementation CWATaskListController
 
@@ -108,7 +109,7 @@
   if(!buttonArray)
   {
     [listBnsHandler requestDataAndButtonsWithDate:[CWATimeUtil getTodayDateString]
-                                         andCount:@"25" 
+                                         andCount:WA_UNHANDLED_QUERY_COUNT
                                       andTaskType:type];
   }
   else

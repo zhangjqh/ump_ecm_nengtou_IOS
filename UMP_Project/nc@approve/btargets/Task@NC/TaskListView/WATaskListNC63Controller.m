@@ -3,6 +3,7 @@
 #import "AppDelegate.h"
 #import "WATimeUtil.h"
 #import "WASpinnerView.h"
+#import "WABaseAppDelegate.h"
 
 static NSString *TASK_TASKLIST_KGETNC63TASKLIST =  @"getNC63TaskList";
 static NSString *TASK_TASKLIST_KGETTASKSTATUSLIST  = @"getTaskStatusList";
@@ -27,7 +28,7 @@ static NSString *TASK_TASKLIST_KGETTASKSTATUSLIST  = @"getTaskStatusList";
   
   [iListBnsHandler requestWithDate:[CWATimeUtil getTodayDateString]
                      andStartline:@"1"
-                         andCount:@"25"
+                         andCount:WA_UNHANDLED_QUERY_COUNT
                      andStatusKey:status
                    WithSeviceCode:nil
                     andStatusCode:iCode];
@@ -53,7 +54,7 @@ static NSString *TASK_TASKLIST_KGETTASKSTATUSLIST  = @"getTaskStatusList";
   }
   [iListBnsHandler requestWithDate:[CWATimeUtil getTodayDateString]
                      andStartline:@"1"
-                         andCount:@"25"
+                         andCount:WA_UNHANDLED_QUERY_COUNT
                      andStatusKey:status
                    WithSeviceCode:nil
                     andStatusCode:nil];

@@ -9,6 +9,7 @@
 #import "TaskDef.h"
 #import "WASpinnerView.h"
 #import "WACommonInfoVO.h"
+#import "WABaseAppDelegate.h"
 
 @implementation CWATaskListBnsHandler
 
@@ -559,7 +560,7 @@ return nil;
                           andTaskType:(TWATaskType)aTaskType
 {
   NSMutableDictionary *taskListDic = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
-                                       @"25",@"count",
+                                       WA_UNHANDLED_QUERY_COUNT,@"count",
                                        @"1" ,@"startline",
                                        @"",@"statuscode",
                                        [CWATimeUtil getTodayDateString],@"date"

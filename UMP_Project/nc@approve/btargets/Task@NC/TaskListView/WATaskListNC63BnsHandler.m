@@ -5,6 +5,8 @@
 #import "WAStatusVO.h"
 #import "WACommonInfoVO.h"
 #import "WANC63TaskListVO.h"
+#import "WABaseAppDelegate.h"
+
 @implementation CWATaskListNC63BnsHandler
 
 
@@ -669,7 +671,7 @@ static NSString *TASK_TASKLIST_STATUSLIST_KISREMINDER  = @"isreminder";
     if(!aStatusKey)
     {
         NSMutableDictionary *taskListDic = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
-                                             @"25",@"count",
+                                             WA_UNHANDLED_QUERY_COUNT,@"count",
                                              @"1" ,@"startline",
                                              @"",@"statuscode",
                                              @"",@"statuskey",

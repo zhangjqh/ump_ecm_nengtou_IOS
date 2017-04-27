@@ -51,7 +51,7 @@ static NSString *namespaceC = @"nc.bs.oa.oama.ecm";
 
 static NSString *ModelName = @"ncapprove";
 
-static int WA_TASKDETAIL_COUNTSPERPAGE = 25;
+static int WA_TASKDETAIL_COUNTSPERPAGE = 100;
 const static int WA_TASK_TAB_SETTING63_TAG = 1235;
 
 @synthesize iStatusVOs;

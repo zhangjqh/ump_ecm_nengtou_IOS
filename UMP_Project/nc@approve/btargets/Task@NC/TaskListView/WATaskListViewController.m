@@ -68,7 +68,7 @@ static NSString *WA_TASKDETAIL_FLAG = @"flag";
 static NSString *WA_TASKDETAIL_DESC = @"desc";
 
 //每页的条数
-static int WA_TASKDETAIL_COUNTSPERPAGE = 25;
+static int WA_TASKDETAIL_COUNTSPERPAGE = 100;
 static int WA_TASK_TAB_SETTING_TAG = 1234;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil 

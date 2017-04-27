@@ -16,6 +16,10 @@
 #define WA_PUSHKEY_M @"m"
 #define WA_PUSHKEY_DISMISSVIEW @"disMissView"
 #define WA_PUSHKEY_PRESENTVIEW @"presentView"
+
+//待办每页数量
+#define WA_UNHANDLED_QUERY_COUNT @"100"
+
 typedef void (^TWAPushOperateFinish)(BOOL isSucceed);
 
 /*!
