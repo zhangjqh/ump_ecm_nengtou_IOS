@@ -360,9 +360,57 @@ static NSString *ModelName = @"msg_MessageDetail";
                           @"",@"gradient",
                           @"0",@"border-radius",
                           nil] container:self];
+    
+    //明细界面添加标题字段msgtitle panel1包含panel_msgtitle包含label_msgtitle
+    _panel_msgtitle = [[UMLayoutView alloc] init];
+    _panel_msgtitle.controlId = @"panel_msgtitle";
+    _panel_msgtitle.layoutType = Layout_hbox;
+    [(UMLayoutView*)_panel1 addSubUMView:_panel_msgtitle];
+    //设置控件基本属性
+    [UMCompatible initCommonProperty:_panel_msgtitle info:[NSDictionary dictionaryWithObjectsAndKeys:
+                       @"0",@"weightUMPView",
+                       @"15",@"paddingLeftUMP",
+                       @"0",@"paddingTopUMP",
+                       @"15",@"paddingRightUMP",
+                       @"0",@"paddingBottomUMP",
+                       @"0",@"marginLeft",
+                       @"0",@"marginTop",
+                       @"0",@"marginRight",
+                       @"0",@"marginBottom",
+                       @"ALIGN_CENTER",@"valignUMP",
+                       @"ALIGN_LEFT",@"halignUMP",
+                       @"YES",@"visible",
+                       @"NO",@"disabled",
+                       @"NO",@"readOnly",
+                       @"NO",@"isHeightFill",
+                       @"YES",@"isWidthFill",
+                       @"NO",@"isHeightWrap",
+                       @"NO",@"isWidthWrap",
+                       @"0",@"left",
+                       @"0",@"top",
+                       @"0",@"width",
+                       @"44",@"height",
+                       @"",@"color",
+                       [UIColor clearColor],@"backgroundColor",
+                       @"list_row_mid1.png",@"backgroundImagePath",
+                       [UIColor clearColor],@"background_color_dis",
+                       @"",@"border-top-style",
+                       @"",@"border-top-width",
+                       @"",@"border-top-color",
+                       @"",@"border-left-style",
+                       @"",@"border-left-width",
+                       @"",@"border-left-color",
+                       @"",@"border-right-style",
+                       @"",@"border-right-width",
+                       @"",@"border-right-color",
+                       @"",@"border-bottom-style",
+                       @"",@"border-bottom-width",
+                       @"",@"border-bottom-color",
+                       @"",@"display",
+                       @"",@"gradient",
+                       @"0",@"border-radius", nil] container:self];
 
-
-
+    
 
     _panel3 = [[UMLayoutView alloc] init];
     _panel3.controlId = @"panel3";
@@ -729,6 +777,46 @@ static NSString *ModelName = @"msg_MessageDetail";
                           @"txt_b":@"0.43529412",
                           @"valign":@"center",@"value":@""}];
     [(UMLayoutView*)_panel2 addSubUMXView:_label2];
+    
+// --label_msgtitle_title
+    _label_msgtitle_title = [UMControl creatControl:@"UMXLabel" container:self  params:@{
+                 @"halign":@"left",
+                 @"width":@"70",
+                 @"font_size":@"16",
+                 @"txt_r":@"0.0",
+                 @"id":@"_label_msgtitle_title",
+                 @"txt_g":@"0.0",
+                 @"margin-right":@"15",
+                 @"height":@"wrap",
+                 @"font_family":@"ArialMT",
+                 @"color":@"#000000",
+                 @"heightwrap":@"23.0",
+                 @"font-size":@"16",
+                 @"font-family":@"default",
+                 @"txt_b":@"0.0",
+                 @"valign":@"center",@"value":@"#{res.msg_msgtitle}"}];
+    [(UMLayoutView*)_panel_msgtitle addSubUMXView:_label_msgtitle_title];
+    
+// --label_msgtitle
+    _label_msgtitle = [UMControl creatControl:@"UMXLabel" container:self params:@{
+                          @"bindfield":@"msgtitle",
+                          @"halign":@"right",
+                          @"weight":@"1",
+                          @"width":@"0",
+                          @"font_size":@"16",
+                          @"txt_r":@"0.43529412",
+                          @"txt_g":@"0.43529412",
+                          @"id":@"_label_msgtitle",
+                          @"height":@"wrap",
+                          @"font_family":@"ArialMT",
+                          @"color":@"#6f6f6f",
+                          @"heightwrap":@"23.0",
+                          @"font-size":@"16",
+                          @"onclick":@"label_msgtitle_onclick",
+                          @"font-family":@"default",
+                          @"txt_b":@"0.43529412",
+                          @"valign":@"center",@"value":@""}];
+    [(UMLayoutView*)_panel_msgtitle addSubUMXView:_label_msgtitle];
 
 // --label3
     _label3 = [UMControl creatControl:@"UMXLabel" container:self  params:@{
@@ -1250,6 +1338,8 @@ static NSString *ModelName = @"msg_MessageDetail";
 
 
 [self umcontrol:_label10 controlid:@"label10" bindfield:@"content"];
+    
+    [self umcontrol:_label_msgtitle controlid:@"label_msgtitle" bindfield:@"msgtitle"];
 
     [self bindAll];
    [_viewObject clearFinishedAdjustSize];
@@ -1270,6 +1360,20 @@ if(args==nil) {
 [UMCommonSevice callSeviceWithMethod:args];
 
 }
+
+- (void)label_msgtitle_onclick:(id<UMViewControl>)sender args:(XEventArgs *)args{
+    if(args==nil) {
+        args = [[XEventArgs alloc] init:self];
+    }
+    [args setInvoke:[self getInvokeInfo:@"label_msgtitle_onclick" method:@"this.label_msgtitle_onclick()" sender:sender]];
+    
+    [args putValue:@"true" forKey:@"issystem"];
+    
+    [args putValue:@"javascript" forKey:@"language"];
+    [UMCommonSevice callSeviceWithMethod:args];
+    
+}
+
 - (void)GoBack:(id<UMViewControl>)sender args:(XEventArgs *)args{
 if(args==nil) {
   args = [[XEventArgs alloc] init:self];

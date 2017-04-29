@@ -91,6 +91,9 @@
 @property (strong) UMLayoutView* panel8;
 - (UMLayoutView*)panel8 BV_OBJC_METHOD_FAMILY_NONE;
 
+@property (strong) UMLayoutView* panel_msgtitle;
+- (UMLayoutView*)panel_msgtitle BV_OBJC_METHOD_FAMILY_NONE;
+
 
 
 
@@ -138,6 +141,9 @@
 @property (nonatomic,strong) UMView* label7;
 
 @property (nonatomic,strong) UMView* label10;
+
+@property (nonatomic,strong) UMView* label_msgtitle_title;
+@property (nonatomic,strong) UMView* label_msgtitle;
 
 
 - (void)dataBind:(NSString*)data;

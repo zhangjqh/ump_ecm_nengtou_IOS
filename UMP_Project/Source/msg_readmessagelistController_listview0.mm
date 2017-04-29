@@ -40,7 +40,7 @@
                           @"0",@"left",
                           @"0",@"top",
                           @"0",@"width",
-                          @"70",@"height",
+                          @"90",@"height",
                           @"",@"color",
                           [UIColor colorWithRed:1.0 green:1.0 blue:0.8784314 alpha:1],@"backgroundColor",
                           @"",@"backgroundImagePath",
@@ -92,7 +92,7 @@
                           @"0",@"left",
                           @"0",@"top",
                           @"0",@"width",
-                          @"70",@"height",
+                          @"90",@"height",
                           @"",@"color",
                           [UIColor clearColor],@"backgroundColor",
                           @"list_row_mid3.png",@"backgroundImagePath",
@@ -144,7 +144,7 @@
                           @"0",@"left",
                           @"0",@"top",
                           @"0",@"width",
-                          @"70",@"height",
+                          @"90",@"height",
                           @"",@"color",
                           [UIColor clearColor],@"backgroundColor",
                           @"",@"backgroundImagePath",
@@ -362,6 +362,78 @@
                           @"txt_b":@"0.43529412",
                           @"valign":@"center",@"value":@"businessType"}];
     [(UMLayoutView*)_listview0_childWgt0_panel21 addSubUMXView:_listview0_childWgt0_businessType];
+    
+    //添加邮件标题字段，列表两行布局变3行(panel2包含panel6包含msgtitle的label)
+    _listview0_childWgt0_panel6 = [[UMLayoutView alloc] init];
+    _listview0_childWgt0_panel6.controlId = @"listview0_childWgt0_panel6";
+    _listview0_childWgt0_panel6.layoutType = Layout_hbox;
+    [(UMLayoutView*)_listview0_childWgt0_panel2 addSubUMView:_listview0_childWgt0_panel6];
+    //设置控件基本属性
+    [UMCompatible initCommonProperty:_listview0_childWgt0_panel6 info:[NSDictionary dictionaryWithObjectsAndKeys:
+                           @"0",@"weightUMPView",
+                           @"0",@"paddingLeftUMP",
+                           @"0",@"paddingTopUMP",
+                           @"0",@"paddingRightUMP",
+                           @"0",@"paddingBottomUMP",
+                           @"0",@"marginLeft",
+                           @"0",@"marginTop",
+                           @"0",@"marginRight",
+                           @"0",@"marginBottom",
+                           @"ALIGN_CENTER",@"valignUMP",
+                           @"ALIGN_LEFT",@"halignUMP",
+                           @"YES",@"visible",
+                           @"NO",@"disabled",
+                           @"NO",@"readOnly",
+                           @"NO",@"isHeightFill",
+                           @"YES",@"isWidthFill",
+                           @"NO",@"isHeightWrap",
+                           @"NO",@"isWidthWrap",
+                           @"0",@"left",
+                           @"0",@"top",
+                           @"0",@"width",
+                           @"20",@"height",
+                           @"",@"color",
+                           [UIColor clearColor],@"backgroundColor",
+                           @"",@"backgroundImagePath",
+                           [UIColor clearColor],@"background_color_dis",
+                           @"",@"border-top-style",
+                           @"",@"border-top-width",
+                           @"",@"border-top-color",
+                           @"",@"border-left-style",
+                           @"",@"border-left-width",
+                           @"",@"border-left-color",
+                           @"",@"border-right-style",
+                           @"",@"border-right-width",
+                           @"",@"border-right-color",
+                           @"",@"border-bottom-style",
+                           @"",@"border-bottom-width",
+                           @"",@"border-bottom-color",
+                           @"",@"display",
+                           @"",@"gradient",
+                           @"0",@"border-radius", nil] container:self];
+    // --listview0_childWgt0_msgtitle
+    _listview0_childWgt0_msgtitle = [UMControl creatControl:@"UMXLabel" container:self  params:@{
+                             @"bindfield":@"msgtitle",
+                             @"halign":@"left",
+                             @"widthwrap":@"75.0",
+                             @"width":@"wrap",
+                             @"font_size":@"13",
+                             @"txt_r":@"0.43529412",
+                             @"txt_g":@"0.43529412",
+                             @"id":@"listview0_childWgt0_msgtitle",
+                             @"height":@"wrap",
+                             @"font_family":@"ArialMT",
+                             @"color":@"#6f6f6f",
+                             @"heightwrap":@"19.0",
+                             @"font-size":@"13",
+                             @"layout":@"Layout_vbox",
+                             @"font-family":@"default",
+                             @"txt_b":@"0.43529412",
+                             @"valign":@"center",@"value":@"msgtitle"}];
+    [(UMLayoutView*)_listview0_childWgt0_panel6 addSubUMXView:_listview0_childWgt0_msgtitle];
+    
+
+    
 
     _listview0_childWgt0_panel5 = [[UMLayoutView alloc] init];
     _listview0_childWgt0_panel5.controlId = @"listview0_childWgt0_panel5";
@@ -674,7 +746,7 @@
     [(UMLayoutView*)_listview0_childWgt0_panel3 addSubUMXView:_listview0_childWgt0_image0];
 
 [self.contentView addSubview:_listview0_childWgt0.content];
-self.cellHeight = @"70";
+self.cellHeight = @"90";
 break;
 }
 
@@ -691,6 +763,7 @@ break;
 [self umcontrol:_listview0_childWgt0_businessType controlid:@"listview0_childWgt0_businessType" bindfield:@"businessType"];
 [self umcontrol:_listview0_childWgt0_msgSendBy controlid:@"listview0_childWgt0_msgSendBy" bindfield:@"sendBy"];
 [self umcontrol:_listview0_childWgt0_datetime controlid:@"listview0_childWgt0_datetime" bindfield:@"sendDate"];
+    [self umcontrol:_listview0_childWgt0_msgtitle controlid:@"listview0_childWgt0_msgtitle" bindfield:@"msgtitle"];
 
     [self bindAll];
     
@@ -761,6 +834,7 @@ break;
 [self umcontrol:_listview0_childWgt0_businessType controlid:@"listview0_childWgt0_businessType" bindfield:@"businessType"];
 [self umcontrol:_listview0_childWgt0_msgSendBy controlid:@"listview0_childWgt0_msgSendBy" bindfield:@"sendBy"];
 [self umcontrol:_listview0_childWgt0_datetime controlid:@"listview0_childWgt0_datetime" bindfield:@"sendDate"];
+         [self umcontrol:_listview0_childWgt0_msgtitle controlid:@"listview0_childWgt0_msgtitle" bindfield:@"msgtitle"];
 
     }
     
@@ -786,7 +860,7 @@ break;
 {
     switch ([index integerValue]) {
     case 0:
-self.cellHeight = @"70";
+self.cellHeight = @"90";
 break;
 
     default:

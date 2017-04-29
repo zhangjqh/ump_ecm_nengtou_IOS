@@ -50,6 +50,9 @@
 @property (strong) UMLayoutView* listview0_childWgt0_panel10;
 - (UMLayoutView*)listview0_childWgt0_panel10 BV_OBJC_METHOD_FAMILY_NONE;
 
+@property (strong) UMLayoutView* listview0_childWgt0_panel13;
+- (UMLayoutView*)listview0_childWgt0_panel13 BV_OBJC_METHOD_FAMILY_NONE;
+
 
 @property (strong) UMLayoutView* listview0_childWgt1;
 - (UMLayoutView*)listview0_childWgt1 BV_OBJC_METHOD_FAMILY_NONE;
@@ -95,7 +98,8 @@
 @property (strong) UMLayoutView* listview0_childWgt1_panel10;
 - (UMLayoutView*)listview0_childWgt1_panel10 BV_OBJC_METHOD_FAMILY_NONE;
 
-
+@property (strong) UMLayoutView* listview0_childWgt1_panel13;
+- (UMLayoutView*)listview0_childWgt1_panel13 BV_OBJC_METHOD_FAMILY_NONE;
 
 
 
@@ -124,6 +128,8 @@
 
 @property (nonatomic,strong) UMView* listview0_childWgt0_image1;
 
+@property (nonatomic,strong) UMView* listview0_childWgt0_msgtitle;
+
 
 
 
@@ -149,7 +155,7 @@
 
 @property (nonatomic,strong) UMView* listview0_childWgt1_image1;
 
-
+@property (nonatomic,strong) UMView* listview0_childWgt1_msgtitle;
 
 
 @end
@@ -184,6 +190,7 @@
 
 @property (nonatomic,strong) UMView* listview0_childWgt0_image1;
 
+@property (nonatomic,strong) UMView* listview0_childWgt0_msgtitle;
 
 
 
@@ -209,6 +216,7 @@
 
 @property (nonatomic,strong) UMView* listview0_childWgt1_image1;
 
+@property (nonatomic,strong) UMView* listview0_childWgt1_msgtitle;
 
 
 @property (strong) UMLayoutView* listview0_childWgt0;
@@ -255,6 +263,9 @@
 @property (strong) UMLayoutView* listview0_childWgt0_panel10;
 - (UMLayoutView*)listview0_childWgt0_panel10 BV_OBJC_METHOD_FAMILY_NONE;
 
+@property (strong) UMLayoutView* listview0_childWgt0_panel13;
+- (UMLayoutView*)listview0_childWgt0_panel13 BV_OBJC_METHOD_FAMILY_NONE;
+
 
 @property (strong) UMLayoutView* listview0_childWgt1;
 - (UMLayoutView*)listview0_childWgt1 BV_OBJC_METHOD_FAMILY_NONE;
@@ -299,6 +310,9 @@
 
 @property (strong) UMLayoutView* listview0_childWgt1_panel10;
 - (UMLayoutView*)listview0_childWgt1_panel10 BV_OBJC_METHOD_FAMILY_NONE;
+
+@property (strong) UMLayoutView* listview0_childWgt1_panel13;
+- (UMLayoutView*)listview0_childWgt1_panel13 BV_OBJC_METHOD_FAMILY_NONE;
 
 
 
@@ -351,6 +365,9 @@
 @property (strong) UMLayoutView* listview0_childWgt0_panel10;
 - (UMLayoutView*)listview0_childWgt0_panel10 BV_OBJC_METHOD_FAMILY_NONE;
 
+@property (strong) UMLayoutView* listview0_childWgt0_panel13;
+- (UMLayoutView*)listview0_childWgt0_panel13 BV_OBJC_METHOD_FAMILY_NONE;
+
 
 @property (strong) UMLayoutView* listview0_childWgt1;
 - (UMLayoutView*)listview0_childWgt1 BV_OBJC_METHOD_FAMILY_NONE;
@@ -396,6 +413,8 @@
 @property (strong) UMLayoutView* listview0_childWgt1_panel10;
 - (UMLayoutView*)listview0_childWgt1_panel10 BV_OBJC_METHOD_FAMILY_NONE;
 
+@property (strong) UMLayoutView* listview0_childWgt1_panel13;
+- (UMLayoutView*)listview0_childWgt1_panel13 BV_OBJC_METHOD_FAMILY_NONE;
 
 
 
@@ -427,7 +446,7 @@
 
 @property (nonatomic,strong) UMView* listview0_childWgt0_image1;
 
-
+@property (nonatomic,strong) UMView* listview0_childWgt0_msgtitle;
 
 
 @property (nonatomic,strong) UMView* listview0_childWgt1_image0;
@@ -452,6 +471,7 @@
 
 @property (nonatomic,strong) UMView* listview0_childWgt1_image1;
 
+@property (nonatomic,strong) UMView* listview0_childWgt1_msgtitle;
 
 
 -(void)getCellHeightByIndex:(NSString *)index;

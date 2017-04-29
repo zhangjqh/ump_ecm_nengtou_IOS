@@ -408,6 +408,7 @@ CFBundleDisplayName="ECM";
 "msg_Send"="发送";
 "msg_Recipient"="收件人";
 "msg_SendPerson"="发送人";
+"msg_msgtitle"="标题";
 "msg_Topic"="主题";
 "msg_Attachment"="附件:";
 "msg_ReadMessage"="已读消息列表";

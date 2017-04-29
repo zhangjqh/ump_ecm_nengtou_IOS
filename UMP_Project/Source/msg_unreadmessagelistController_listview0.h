@@ -43,8 +43,8 @@
 @property (strong) UMLayoutView* listview0_childWgt0_panel3;
 - (UMLayoutView*)listview0_childWgt0_panel3 BV_OBJC_METHOD_FAMILY_NONE;
 
-
-
+@property (strong) UMLayoutView* listview0_childWgt0_panel6;
+- (UMLayoutView*)listview0_childWgt0_panel6 BV_OBJC_METHOD_FAMILY_NONE;
 
 
 @property(nonatomic,strong)NSString *cellHeight;
@@ -67,6 +67,9 @@
 
 
 @property (nonatomic,strong) UMView* listview0_childWgt0_image0;
+
+//能投项目新加的邮件标题字段
+@property (nonatomic,strong) UMView* listview0_childWgt0_msgtitle;
 
 
 
@@ -98,6 +101,10 @@
 
 
 @property (nonatomic,strong) UMView* listview0_childWgt0_image0;
+
+//能投项目新加的邮件标题字段
+@property (nonatomic,strong) UMView* listview0_childWgt0_msgtitle;
+
 
 
 
@@ -138,7 +145,8 @@
 @property (strong) UMLayoutView* listview0_childWgt0_panel3;
 - (UMLayoutView*)listview0_childWgt0_panel3 BV_OBJC_METHOD_FAMILY_NONE;
 
-
+@property (strong) UMLayoutView* listview0_childWgt0_panel6;
+- (UMLayoutView*)listview0_childWgt0_panel6 BV_OBJC_METHOD_FAMILY_NONE;
 
 
 @end
@@ -182,6 +190,9 @@
 @property (strong) UMLayoutView* listview0_childWgt0_panel3;
 - (UMLayoutView*)listview0_childWgt0_panel3 BV_OBJC_METHOD_FAMILY_NONE;
 
+@property (strong) UMLayoutView* listview0_childWgt0_panel6;
+- (UMLayoutView*)listview0_childWgt0_panel6 BV_OBJC_METHOD_FAMILY_NONE;
+
 
 
 
@@ -208,6 +219,10 @@
 
 
 @property (nonatomic,strong) UMView* listview0_childWgt0_image0;
+
+//能投项目新加的邮件标题字段
+@property (nonatomic,strong) UMView* listview0_childWgt0_msgtitle;
+
 
 
 
