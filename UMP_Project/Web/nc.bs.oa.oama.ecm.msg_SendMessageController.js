@@ -77,6 +77,11 @@ function nc$bs$oa$oama$ecm$msg_SendMessageController$SendMessage(ctx){
 		alert($res.getResString("msg_RecipientIsNull"));//收件人不能为空
 		return;
 	}
+    var msgtitle = ctx.get("msgtitle");
+    if(!msgtitle){
+        alert($res.getResString("msg_msgtitleIsNull"));
+        return;
+    }
 	var content = ctx.get("content");
 	var attachmentName = getAttachmentNameCache();
 	if(!attachmentName && !content)

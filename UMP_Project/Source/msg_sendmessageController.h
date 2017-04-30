@@ -104,6 +104,11 @@
 @property (strong) UMLayoutView* panelCSSMS;
 - (UMLayoutView*)panelCSSMS BV_OBJC_METHOD_FAMILY_NONE;
 
+@property (strong) UMLayoutView* panel_msgtitle;
+- (UMLayoutView*)panel_msgtitle BV_OBJC_METHOD_FAMILY_NONE;
+
+@property (strong) UMLayoutView* panel_msgtitle1;
+- (UMLayoutView*)panel_msgtitle1 BV_OBJC_METHOD_FAMILY_NONE;
 
 
 
@@ -168,6 +173,10 @@
 @property (nonatomic,strong) UMView* labelCSSMS;
 
 @property (nonatomic,strong) UMView* txtContent;
+
+@property (nonatomic,strong) UMView* label_msgtitle_title;
+
+@property (nonatomic,strong) UMView* txt_msgtitle;
 
 
 - (void)dataBind:(NSString*)data;

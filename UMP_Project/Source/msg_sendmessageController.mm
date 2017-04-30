@@ -331,6 +331,67 @@ static NSString *ModelName = @"msg_CreateMessage";
     [_panel1 setContainer:self];
     [_panel1 addEvent:@"onclick" actionName:@"OpenRecipientList"];
 
+    //新建消息时添加邮件标题 panel_msgtitle
+    _panel_msgtitle = [[UMLayoutView alloc] init];
+    _panel_msgtitle.controlId = @"panel_msgtitle";
+    _panel_msgtitle.layoutType = Layout_hbox;
+    [(UMLayoutView*)_viewPage0 addSubUMView:_panel_msgtitle];
+    //设置控件基本属性
+    [UMCompatible initCommonProperty:_panel_msgtitle info:[NSDictionary dictionaryWithObjectsAndKeys:
+                   @"0",@"weightUMPView",
+                   @"15",@"paddingLeftUMP",
+                   @"0",@"paddingTopUMP",
+                   @"15",@"paddingRightUMP",
+                   @"0",@"paddingBottomUMP",
+                   @"0",@"marginLeft",
+                   @"0",@"marginTop",
+                   @"0",@"marginRight",
+                   @"0",@"marginBottom",
+                   @"ALIGN_CENTER",@"valignUMP",
+                   @"ALIGN_LEFT",@"halignUMP",
+                   @"YES",@"visible",
+                   @"NO",@"disabled",
+                   @"NO",@"readOnly",
+                   @"NO",@"isHeightFill",
+                   @"YES",@"isWidthFill",
+                   @"NO",@"isHeightWrap",
+                   @"NO",@"isWidthWrap",
+                   @"0",@"left",
+                   @"0",@"top",
+                   @"0",@"width",
+                   @"44",@"height",
+                   @"",@"color",
+                   [UIColor clearColor],@"backgroundColor",
+                   @"list_row_mid1.png",@"backgroundImagePath",
+                   [UIColor clearColor],@"background_color_dis",
+                   @"",@"border-top-style",
+                   @"",@"border-top-width",
+                   @"",@"border-top-color",
+                   @"",@"border-left-style",
+                   @"",@"border-left-width",
+                   @"",@"border-left-color",
+                   @"",@"border-right-style",
+                   @"",@"border-right-width",
+                   @"",@"border-right-color",
+                   @"",@"border-bottom-style",
+                   @"",@"border-bottom-width",
+                   @"",@"border-bottom-color",
+                   @"",@"display",
+                   @"",@"gradient",
+                   @"0",@"border-radius",
+                   nil] container:self];
+
+    
+    
+    
+    [_panel_msgtitle setContainer:self];
+//    [_panel_msgtitle addEvent:@"onclick" actionName:@"OpenRecipientList"];
+    
+
+    
+    
+    
+    
     _panel3 = [[UMLayoutView alloc] init];
     _panel3.controlId = @"panel3";
     _panel3.layoutType = Layout_hbox;
@@ -521,7 +582,27 @@ static NSString *ModelName = @"msg_CreateMessage";
                           @"txt_b":@"0.0",
                           @"valign":@"center",@"value":@"#{res.msg_Recipient}"}];
     [(UMLayoutView*)_panel1 addSubUMXView:_label1];
-
+    
+// --label_msgtitle
+    _label_msgtitle_title = [UMControl creatControl:@"UMXLabel" container:self params:@{
+                  @"halign":@"left",
+                  @"width":@"50",
+                  @"font_size":@"14",
+                  @"txt_r":@"0.0",
+                  @"id":@"_label_msgtitle",
+                  @"txt_g":@"0.0",
+                  @"margin-right":@"10",
+                  @"height":@"wrap",
+                  @"font_family":@"ArialMT",
+                  @"color":@"#000000",
+                  @"heightwrap":@"20.0",
+                  @"font-size":@"14",
+                  @"font-family":@"default",
+                  @"txt_b":@"0.0",
+                  @"valign":@"center",@"value":@"#{res.msg_msgtitle}"}];
+    [(UMLayoutView*)_panel_msgtitle addSubUMXView:_label_msgtitle_title];
+    
+    
     _panel6 = [[UMLayoutView alloc] init];
     _panel6.controlId = @"panel6";
     _panel6.layoutType = Layout_hbox;
@@ -571,6 +652,57 @@ static NSString *ModelName = @"msg_CreateMessage";
                           @"0",@"border-radius",
                           nil] container:self];
 
+// panel_msgtitle1 里层panel
+    _panel_msgtitle1 = [[UMLayoutView alloc] init];
+    _panel_msgtitle1.controlId = @"panel_msgtitle1";
+    _panel_msgtitle1.layoutType = Layout_hbox;
+    [(UMLayoutView*)_panel_msgtitle addSubUMView:_panel_msgtitle1];
+    //设置控件基本属性
+    [UMCompatible initCommonProperty:_panel_msgtitle1 info:[NSDictionary dictionaryWithObjectsAndKeys:
+                       @"0",@"weightUMPView",
+                       @"0",@"paddingLeftUMP",
+                       @"0",@"paddingTopUMP",
+                       @"0",@"paddingRightUMP",
+                       @"0",@"paddingBottomUMP",
+                       @"0",@"marginLeft",
+                       @"0",@"marginTop",
+                       @"0",@"marginRight",
+                       @"0",@"marginBottom",
+                       @"ALIGN_CENTER",@"valignUMP",
+                       @"ALIGN_LEFT",@"halignUMP",
+                       @"YES",@"visible",
+                       @"NO",@"disabled",
+                       @"NO",@"readOnly",
+                       @"NO",@"isHeightFill",
+                       @"YES",@"isWidthFill",
+                       @"NO",@"isHeightWrap",
+                       @"NO",@"isWidthWrap",
+                       @"0",@"left",
+                       @"0",@"top",
+                       @"0",@"width",
+                       @"44",@"height",
+                       @"",@"color",
+                       [UIColor clearColor],@"backgroundColor",
+                       @"",@"backgroundImagePath",
+                       [UIColor clearColor],@"background_color_dis",
+                       @"",@"border-top-style",
+                       @"",@"border-top-width",
+                       @"",@"border-top-color",
+                       @"",@"border-left-style",
+                       @"",@"border-left-width",
+                       @"",@"border-left-color",
+                       @"",@"border-right-style",
+                       @"",@"border-right-width",
+                       @"",@"border-right-color",
+                       @"",@"border-bottom-style",
+                       @"",@"border-bottom-width",
+                       @"",@"border-bottom-color",
+                       @"",@"display",
+                       @"",@"gradient",
+                       @"0",@"border-radius",
+                       nil] container:self];
+    
+
 
 
 
@@ -595,6 +727,34 @@ static NSString *ModelName = @"msg_CreateMessage";
                           @"valign":@"center",
                           @"readonly":@"false",@"value":@""}];
     [(UMLayoutView*)_panel6 addSubUMXView:_label4];
+    
+// --标题录入框
+    _txt_msgtitle = [UMControl creatControl:@"UMXTextArea" container:self  params:@{
+                      @"bindfield":@"msgtitle",
+                      @"padding-right":@"15",
+                      @"padding-left":@"15",
+                      @"padding-top":@"1",
+                      @"halign":@"LEFT",
+                      @"placeholder":@"#{res.msg_Inputmsgtitle}",
+                      @"width":@"fill",
+                      @"font_size":@"14",
+                      @"txt_r":@"0.0",
+                      @"bg_r":@"1.0",
+                      @"padding-bottom":@"1",
+                      @"txt_g":@"0.0",
+                      @"id":@"txt_msgtitle",
+                      @"height":@"42",
+                      @"color":@"#000000",
+                      @"font_family":@"ArialMT",
+                      @"background":@"#ffffff",
+                      @"font-size":@"14",
+                      @"left":@"0",
+                      @"font-family":@"default",
+                      @"bg_b":@"1.0",
+                      @"txt_b":@"0.0",
+                      @"bg_g":@"1.0",
+                      @"top":@"0",@"value":@""}];
+    [(UMLayoutView*)_panel_msgtitle1 addSubUMXView:_txt_msgtitle];
 
 // --image1
     _image1 = [UMControl creatControl:@"UMXXImageView" container:self  params:@{
@@ -1464,6 +1624,7 @@ static NSString *ModelName = @"msg_CreateMessage";
 
 
 [self umcontrol:_txtContent controlid:@"txtContent" bindfield:@"content"];
+    [self umcontrol:_txt_msgtitle controlid:@"txt_msgtitle" bindfield:@"msgtitle"];
 
     [self bindAll];
    [_viewObject clearFinishedAdjustSize];
