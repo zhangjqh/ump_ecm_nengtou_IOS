@@ -94,6 +94,9 @@
 @property (strong) UMLayoutView* panel_msgtitle;
 - (UMLayoutView*)panel_msgtitle BV_OBJC_METHOD_FAMILY_NONE;
 
+@property (strong) UMLayoutView* panel_buttongroup;//按钮组
+- (UMLayoutView*)panel_buttongroup BV_OBJC_METHOD_FAMILY_NONE;
+
 
 
 
@@ -144,6 +147,9 @@
 
 @property (nonatomic,strong) UMView* label_msgtitle_title;
 @property (nonatomic,strong) UMView* label_msgtitle;
+
+@property (nonatomic,strong) UMView* button_reply;//回复
+@property (nonatomic,strong) UMView* button_transter;//转发
 
 
 - (void)dataBind:(NSString*)data;

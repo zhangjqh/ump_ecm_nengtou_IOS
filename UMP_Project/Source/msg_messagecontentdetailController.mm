@@ -626,7 +626,7 @@ static NSString *ModelName = @"msg_MessageDetail";
     [(UMLayoutView*)_panel1 addSubUMView:_panel7];
      //设置控件基本属性
     [UMCompatible initCommonProperty:_panel7 info:[NSDictionary dictionaryWithObjectsAndKeys:
-                          @"0",@"weightUMPView",
+                          @"1",@"weightUMPView",
                           @"15",@"paddingLeftUMP",
                           @"0",@"paddingTopUMP",
                           @"5",@"paddingRightUMP",
@@ -634,13 +634,13 @@ static NSString *ModelName = @"msg_MessageDetail";
                           @"0",@"marginLeft",
                           @"0",@"marginTop",
                           @"0",@"marginRight",
-                          @"15",@"marginBottom",
+                          @"0",@"marginBottom",
                           @"ALIGN_LEFT",@"valignUMP",
                           @"ALIGN_LEFT",@"halignUMP",
                           @"YES",@"visible",
                           @"NO",@"disabled",
                           @"NO",@"readOnly",
-                          @"YES",@"isHeightFill",
+                          @"NO",@"isHeightFill",
                           @"YES",@"isWidthFill",
                           @"NO",@"isHeightWrap", 
                           @"NO",@"isWidthWrap",
@@ -784,7 +784,7 @@ static NSString *ModelName = @"msg_MessageDetail";
                  @"width":@"70",
                  @"font_size":@"16",
                  @"txt_r":@"0.0",
-                 @"id":@"_label_msgtitle_title",
+                 @"id":@"label_msgtitle_title",
                  @"txt_g":@"0.0",
                  @"margin-right":@"15",
                  @"height":@"wrap",
@@ -806,7 +806,7 @@ static NSString *ModelName = @"msg_MessageDetail";
                           @"font_size":@"16",
                           @"txt_r":@"0.43529412",
                           @"txt_g":@"0.43529412",
-                          @"id":@"_label_msgtitle",
+                          @"id":@"label_msgtitle",
                           @"height":@"wrap",
                           @"font_family":@"ArialMT",
                           @"color":@"#6f6f6f",
@@ -1139,7 +1139,116 @@ static NSString *ModelName = @"msg_MessageDetail";
                           @"txt_b":@"0.43529412",
                           @"valign":@"top",@"value":@""}];
     [(UMLayoutView*)_panel7 addSubUMXView:_label10];
+    
+    
+    
+    //最下方添加按钮组
+    _panel_buttongroup = [[UMLayoutView alloc] init];
+    _panel_buttongroup.controlId = @"panel_buttongroup";
+    _panel_buttongroup.layoutType = Layout_hbox;
+    [(UMLayoutView*)_panel1 addSubUMView:_panel_buttongroup];
+    //设置控件基本属性
+    [UMCompatible initCommonProperty:_panel_buttongroup info:[NSDictionary dictionaryWithObjectsAndKeys:
+                   @"0",@"weightUMPView",
+                   @"15",@"paddingLeftUMP",
+                   @"0",@"paddingTopUMP",
+                   @"15",@"paddingRightUMP",
+                   @"0",@"paddingBottomUMP",
+                   @"0",@"marginLeft",
+                   @"5",@"marginTop",
+                   @"0",@"marginRight",
+                   @"0",@"marginBottom",
+                   @"ALIGN_CENTER",@"valignUMP",
+                   @"ALIGN_LEFT",@"halignUMP",
+                   @"YES",@"visible",
+                   @"NO",@"disabled",
+                   @"NO",@"readOnly",
+                   @"NO",@"isHeightFill",
+                   @"YES",@"isWidthFill",
+                   @"NO",@"isHeightWrap",
+                   @"NO",@"isWidthWrap",
+                   @"0",@"left",
+                   @"0",@"top",
+                   @"0",@"width",
+                   @"44",@"height",
+                   @"",@"color",
+                   [UIColor clearColor],@"backgroundColor",
+                   @"",@"backgroundImagePath",
+                   [UIColor clearColor],@"background_color_dis",
+                   @"",@"border-top-style",
+                   @"",@"border-top-width",
+                   @"",@"border-top-color",
+                   @"",@"border-left-style",
+                   @"",@"border-left-width",
+                   @"",@"border-left-color",
+                   @"",@"border-right-style",
+                   @"",@"border-right-width",
+                   @"",@"border-right-color",
+                   @"",@"border-bottom-style",
+                   @"",@"border-bottom-width",
+                   @"",@"border-bottom-color",
+                   @"",@"display",
+                   @"",@"gradient",
+                   @"0",@"border-radius",
+                   nil] container:self];
+ 
+    //--添加回复按钮和转发按钮
+    // --_button_reply
+    _button_reply = [UMControl creatControl:@"UMXButton" container:self  params:@{
+             @"padding-left":@"35",
+             @"p_txt_r":@"0.9490196",
+             @"halign":@"left",
+             @"pressed-image":@"",
+             @"width":@"0",
+             @"weight":@"1",
+             @"font_size":@"17",
+             @"txt_r":@"0.8980392",
+             @"font-pressed-color":@"#f2adb2",
+             @"txt_g":@"0.0",
+             @"id":@"button_reply",
+             @"p_txt_b":@"0.69803923",
+             @"height":@"44",
+             @"color":@"#e50011",
+             @"font_family":@"ArialMT",
+             @"font-size":@"17",
+             @"value":@"回复",
+             @"onclick":@"Reply",
+             @"font-family":@"default",
+             @"txt_b":@"0.06666667",
+             @"valign":@"center",
+             @"background-image":@"",
+             @"p_txt_g":@"0.6784314"}];
+    [(UMLayoutView*)_panel_buttongroup addSubUMXView:_button_reply];
 
+    // --_button_reply
+    _button_transter = [UMControl creatControl:@"UMXButton" container:self  params:@{
+                  @"padding-right":@"35",
+                  @"p_txt_r":@"0.9490196",
+                  @"halign":@"right",
+                  @"pressed-image":@"",
+                  @"width":@"0",
+                  @"weight":@"1",
+                  @"font_size":@"17",
+                  @"txt_r":@"0.8980392",
+                  @"font-pressed-color":@"#f2adb2",
+                  @"txt_g":@"0.0",
+                  @"id":@"button_transter",
+                  @"p_txt_b":@"0.69803923",
+                  @"height":@"44",
+                  @"color":@"#e50011",
+                  @"font_family":@"ArialMT",
+                  @"font-size":@"17",
+                  @"value":@"转发",
+                  @"onclick":@"Transfer",
+                  @"font-family":@"default",
+                  @"txt_b":@"0.06666667",
+                  @"valign":@"center",
+                  @"background-image":@"",
+                  @"p_txt_g":@"0.6784314"}];
+    [(UMLayoutView*)_panel_buttongroup addSubUMXView:_button_transter];
+
+
+   
 
     [_viewObject adjustSize];
 }
@@ -1384,6 +1493,42 @@ if(args==nil) {
 [UMCommonSevice callSeviceWithMethod:args];
 
 }
+
+//回复触发的事件
+- (void)Reply:(id<UMViewControl>)sender args:(XEventArgs *)args{
+    if(args==nil) {
+        args = [[XEventArgs alloc] init:self];
+    }
+    [args setInvoke:[self getInvokeInfo:@"NewMessage" method:@"UMView.open" sender:sender]];
+    
+    [args putValue:@"msg_sendmessage" forKey:@"viewid"];
+    
+    [args putValue:@"OnLoadUnreadMsgData" forKey:@"callback"];
+    
+    [args putValue:@"true" forKey:@"iskeep"];
+    
+    [args putValue:@"actionType" forKey:@"Reply"];
+    [UMCommonSevice callSeviceWithMethod:args];
+}
+
+//转发触发的事件
+- (void)Transfer:(id<UMViewControl>)sender args:(XEventArgs *)args{
+    if(args==nil) {
+        args = [[XEventArgs alloc] init:self];
+    }
+    [args setInvoke:[self getInvokeInfo:@"NewMessage" method:@"UMView.open" sender:sender]];
+    
+    [args putValue:@"msg_sendmessage" forKey:@"viewid"];
+    
+    [args putValue:@"OnLoadUnreadMsgData" forKey:@"callback"];
+    
+    [args putValue:@"true" forKey:@"iskeep"];
+    
+    [args putValue:@"actionType" forKey:@"Transfer"];
+    [UMCommonSevice callSeviceWithMethod:args];
+    
+}
+
 - (void)OnLoadMsgDetail:(id<UMViewControl>)sender args:(XEventArgs *)args{
 if(args==nil) {
   args = [[XEventArgs alloc] init:self];
