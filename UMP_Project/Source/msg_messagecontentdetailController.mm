@@ -1508,6 +1508,8 @@ if(args==nil) {
     [args putValue:@"true" forKey:@"iskeep"];
     
     [args putValue:@"actionType" forKey:@"Reply"];
+    
+    [args putValue:@"#{msgtitle}" forKey:@"reply_msgtitle"];
     [UMCommonSevice callSeviceWithMethod:args];
 }
 
@@ -1525,6 +1527,8 @@ if(args==nil) {
     [args putValue:@"true" forKey:@"iskeep"];
     
     [args putValue:@"actionType" forKey:@"Transfer"];
+    
+    [args putValue:@"#{msgtitle}" forKey:@"transfer_msgtitle"];
     [UMCommonSevice callSeviceWithMethod:args];
     
 }

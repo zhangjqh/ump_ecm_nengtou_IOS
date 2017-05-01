@@ -2,7 +2,7 @@ Type.registerNamespace('nc.bs.oa.oama.ecm');
 nc.bs.oa.oama.ecm.msg_MessageDetailEntity = function(tag) {
     //Step 1：call base method and initialize the define of context
     nc.bs.oa.oama.ecm.msg_MessageDetailEntity.initializeBase(this,[tag]);
-    $um$initEntity(this, "msg_MessageDetail", {"tag":"context","attributes":{"id":"msg_MessageDetail","iscascade":"false","from-type":"context","filter":""},"fields":{"content":{"tag":"field","attributes":{"id":"content","type":"string"}},"sendDate":{"tag":"field","attributes":{"id":"sendDate","type":"datetime"}},"topic":{"tag":"field","attributes":{"id":"topic","type":"string"}},"sendBy":{"tag":"field","attributes":{"id":"sendBy","type":"string"}},"msgID":{"tag":"field","attributes":{"id":"msgID","type":"string"}},"businessType":{"tag":"field","attributes":{"id":"businessType","type":"string"}},"msgType":{"tag":"field","attributes":{"id":"msgType","type":"string"}},"attachment":{"tag":"field","attributes":{"id":"attachment","type":"string"}}},"namespace":"nc.bs.oa.oama.ecm"});
+    $um$initEntity(this, "msg_MessageDetail", {"tag":"context","attributes":{"id":"msg_MessageDetail","iscascade":"false","from-type":"context","filter":""},"fields":{"content":{"tag":"field","attributes":{"id":"content","type":"string"}},"sendDate":{"tag":"field","attributes":{"id":"sendDate","type":"datetime"}},"topic":{"tag":"field","attributes":{"id":"topic","type":"string"}},"msgtitle":{"tag":"field","attributes":{"id":"msgtitle","type":"string"}},"sendBy":{"tag":"field","attributes":{"id":"sendBy","type":"string"}},"msgID":{"tag":"field","attributes":{"id":"msgID","type":"string"}},"businessType":{"tag":"field","attributes":{"id":"businessType","type":"string"}},"msgType":{"tag":"field","attributes":{"id":"msgType","type":"string"}},"attachment":{"tag":"field","attributes":{"id":"attachment","type":"string"}}},"namespace":"nc.bs.oa.oama.ecm"});
 }
 function nc$bs$oa$oama$ecm$msg_MessageDetailEntity$get_topic(){
     return this.field('topic');
@@ -52,6 +52,12 @@ function nc$bs$oa$oama$ecm$msg_MessageDetailEntity$get_attachment(){
 function nc$bs$oa$oama$ecm$msg_MessageDetailEntity$set_attachment(value){
     return this.field('attachment',value);
 }
+function nc$bs$oa$oama$ecm$msg_MessageDetailEntity$get_msgtitle(){
+    return this.field('msgtitle');
+}
+function nc$bs$oa$oama$ecm$msg_MessageDetailEntity$set_msgtitle(value){
+    return this.field('msgtitle',value);
+}
 nc.bs.oa.oama.ecm.msg_MessageDetailEntity.prototype = {
     get_topic : nc$bs$oa$oama$ecm$msg_MessageDetailEntity$get_topic,
     set_topic : nc$bs$oa$oama$ecm$msg_MessageDetailEntity$get_topic,
@@ -68,6 +74,8 @@ nc.bs.oa.oama.ecm.msg_MessageDetailEntity.prototype = {
     get_msgID : nc$bs$oa$oama$ecm$msg_MessageDetailEntity$get_msgID,
     set_msgID : nc$bs$oa$oama$ecm$msg_MessageDetailEntity$get_msgID,
     get_attachment : nc$bs$oa$oama$ecm$msg_MessageDetailEntity$get_attachment,
-    set_attachment : nc$bs$oa$oama$ecm$msg_MessageDetailEntity$get_attachment
+    set_attachment : nc$bs$oa$oama$ecm$msg_MessageDetailEntity$get_attachment,
+    get_msgtitle : nc$bs$oa$oama$ecm$msg_MessageDetailEntity$get_msgtitle,
+    set_msgtitle : nc$bs$oa$oama$ecm$msg_MessageDetailEntity$get_msgtitle
 }
 nc.bs.oa.oama.ecm.msg_MessageDetailEntity.registerClass('nc.bs.oa.oama.ecm.msg_MessageDetailEntity',UMP.UI.Mvc.Entity);

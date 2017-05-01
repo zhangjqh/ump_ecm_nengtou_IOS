@@ -19,7 +19,8 @@ nc.bs.oa.oama.ecm.msg_SendMessageControllerBase = function() {
         errorDialog : [this.errorDialog],
         AttachmentCallback : [this.AttachmentCallback],
         OpenAttachmentEditList : [this.OpenAttachmentEditList],
-        sendTypeCallback : [this.sendTypeCallback]
+        sendTypeCallback : [this.sendTypeCallback],
+        OnLoadSendMsg : [this.OnLoadSendMsg]
     };
 
     //user controller instance
@@ -367,6 +368,42 @@ function nc$bs$oa$oama$ecm$msg_SendMessageControllerBase$sendTypeCallback(json){
     }
     return json;
 }
+function nc$bs$oa$oama$ecm$msg_SendMessageControllerBase$OnLoadSendMsg(json){
+    
+    try{
+        //when every action begin,  json-->$context
+        this._context = _$um$CRUD$load(this._context, json, this._entity);
+        if(this._context){
+            $context = this._context;//
+        }else{
+            $context = json;//compatible with the old code
+        }
+        
+        if(this._userController.initialize)
+            this._userController.initialize();
+        if(this._userController.OnLoadSendMsg){
+            this._userController.OnLoadSendMsg($context);
+        }else{
+            alert("找不到方法[OnLoadSendMsg]/n，请检查JSController代码是否有语法错误，导致JS未能正确加载");
+        }
+        
+        //when every action end,  $context-->json
+        if(this._context == null){//compatible with the old code
+            return $context;
+        }
+        var newjson = _$um$CRUD$Context2JSON($context);
+        return newjson;
+    }catch(e){
+        if(e.stack){
+            alert(e.stack);
+        }else{
+            alert(e.name + ":" + e.message);
+        }
+    }
+    return json;
+    
+}
+
 nc.bs.oa.oama.ecm.msg_SendMessageControllerBase.prototype = {
     label2_onclick : nc$bs$oa$oama$ecm$msg_SendMessageControllerBase$label2_onclick,
     GoBack : nc$bs$oa$oama$ecm$msg_SendMessageControllerBase$GoBack,
@@ -382,6 +419,7 @@ nc.bs.oa.oama.ecm.msg_SendMessageControllerBase.prototype = {
     errorDialog : nc$bs$oa$oama$ecm$msg_SendMessageControllerBase$errorDialog,
     AttachmentCallback : nc$bs$oa$oama$ecm$msg_SendMessageControllerBase$AttachmentCallback,
     OpenAttachmentEditList : nc$bs$oa$oama$ecm$msg_SendMessageControllerBase$OpenAttachmentEditList,
-    sendTypeCallback : nc$bs$oa$oama$ecm$msg_SendMessageControllerBase$sendTypeCallback
+    sendTypeCallback : nc$bs$oa$oama$ecm$msg_SendMessageControllerBase$sendTypeCallback,
+    OnLoadSendMsg : nc$bs$oa$oama$ecm$msg_SendMessageControllerBase$OnLoadSendMsg
 };
 nc.bs.oa.oama.ecm.msg_SendMessageControllerBase.registerClass('nc.bs.oa.oama.ecm.msg_SendMessageControllerBase',UMP.UI.Mvc.Controller);

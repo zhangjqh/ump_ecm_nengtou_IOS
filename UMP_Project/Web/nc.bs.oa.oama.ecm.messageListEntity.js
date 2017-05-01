@@ -2,7 +2,7 @@ Type.registerNamespace('nc.bs.oa.oama.ecm');
 nc.bs.oa.oama.ecm.messageListEntity = function(tag) {
     //Step 1：call base method and initialize the define of context
     nc.bs.oa.oama.ecm.messageListEntity.initializeBase(this,[tag]);
-    $um$initEntity(this, "messageList", {"tag":"context","attributes":{"id":"messageList","iscascade":"false","from-type":"context","filter":""},"fields":{"content":{"tag":"field","attributes":{"id":"content","type":"string"}},"topic":{"tag":"field","attributes":{"id":"topic","type":"string"}},"sendBy":{"tag":"field","attributes":{"id":"sendBy","type":"string"}},"msgType":{"tag":"field","attributes":{"id":"msgType","type":"string"}},"datetime":{"tag":"field","attributes":{"id":"datetime","type":"datetime"}}},"namespace":"nc.bs.oa.oama.ecm"});
+    $um$initEntity(this, "messageList", {"tag":"context","attributes":{"id":"messageList","iscascade":"false","from-type":"context","filter":""},"fields":{"content":{"tag":"field","attributes":{"id":"content","type":"string"}},"topic":{"tag":"field","attributes":{"id":"topic","type":"string"}},"msgtitle":{"tag":"field","attributes":{"id":"msgtitle","type":"string"}},"sendBy":{"tag":"field","attributes":{"id":"sendBy","type":"string"}},"msgType":{"tag":"field","attributes":{"id":"msgType","type":"string"}},"datetime":{"tag":"field","attributes":{"id":"datetime","type":"datetime"}}},"namespace":"nc.bs.oa.oama.ecm"});
 }
 function nc$bs$oa$oama$ecm$messageListEntity$get_topic(){
     return this.field('topic');
@@ -34,6 +34,12 @@ function nc$bs$oa$oama$ecm$messageListEntity$get_content(){
 function nc$bs$oa$oama$ecm$messageListEntity$set_content(value){
     return this.field('content',value);
 }
+function nc$bs$oa$oama$ecm$messageListEntity$get_msgtitle(){
+    return this.field('msgtitle');
+}
+function nc$bs$oa$oama$ecm$messageListEntity$set_msgtitle(value){
+    return this.field('msgtitle',value);
+}
 nc.bs.oa.oama.ecm.messageListEntity.prototype = {
     get_topic : nc$bs$oa$oama$ecm$messageListEntity$get_topic,
     set_topic : nc$bs$oa$oama$ecm$messageListEntity$get_topic,
@@ -44,6 +50,8 @@ nc.bs.oa.oama.ecm.messageListEntity.prototype = {
     get_datetime : nc$bs$oa$oama$ecm$messageListEntity$get_datetime,
     set_datetime : nc$bs$oa$oama$ecm$messageListEntity$get_datetime,
     get_content : nc$bs$oa$oama$ecm$messageListEntity$get_content,
-    set_content : nc$bs$oa$oama$ecm$messageListEntity$get_content
+    set_content : nc$bs$oa$oama$ecm$messageListEntity$get_content,
+    get_msgtitle : nc$bs$oa$oama$ecm$messageListEntity$get_msgtitle,
+    set_msgtitle : nc$bs$oa$oama$ecm$messageListEntity$get_msgtitle
 }
 nc.bs.oa.oama.ecm.messageListEntity.registerClass('nc.bs.oa.oama.ecm.messageListEntity',UMP.UI.Mvc.Entity);

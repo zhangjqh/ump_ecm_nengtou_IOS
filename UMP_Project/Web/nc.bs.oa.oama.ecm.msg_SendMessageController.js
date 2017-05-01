@@ -218,6 +218,9 @@ function nc$bs$oa$oama$ecm$msg_SendMessageController$onCloseClick(ctx){
 	UM_NativeCall.callService("UMView.close", jsonToString(params));	
 	
 }
+function nc$bs$oa$oama$ecm$msg_SendMessageController$OnLoadSendMsg(ctx){
+    alert("发送消息界面初始化");
+}
 nc.bs.oa.oama.ecm.msg_SendMessageController.prototype = {
     initialize : nc$bs$oa$oama$ecm$msg_SendMessageController$initialize,
     errorDialog : nc$bs$oa$oama$ecm$msg_SendMessageController$errorDialog,
@@ -227,6 +230,7 @@ nc.bs.oa.oama.ecm.msg_SendMessageController.prototype = {
     AttachmentCallback : nc$bs$oa$oama$ecm$msg_SendMessageController$AttachmentCallback,
     onLoadSendType : nc$bs$oa$oama$ecm$msg_SendMessageController$onLoadSendType,
     sendTypeCallback : nc$bs$oa$oama$ecm$msg_SendMessageController$sendTypeCallback,
-    SendMessage : nc$bs$oa$oama$ecm$msg_SendMessageController$SendMessage
+    SendMessage : nc$bs$oa$oama$ecm$msg_SendMessageController$SendMessage,
+    OnLoadSendMsg : nc$bs$oa$oama$ecm$msg_SendMessageController$OnLoadSendMsg
 };
 nc.bs.oa.oama.ecm.msg_SendMessageController.registerClass('nc.bs.oa.oama.ecm.msg_SendMessageController');

@@ -1526,7 +1526,7 @@ static NSString *ModelName = @"msg_CreateMessage";
 
 
 
-
+    [self OnLoadSendMsg:nil args:nil];
 
 
 
@@ -1810,6 +1810,16 @@ if(args==nil) {
 [args setInvoke:[self getInvokeInfo:@"sendTypeCallback" method:@"sendTypeCallback" sender:sender]];
 [UMCommonSevice callSeviceWithMethod:args];
 
+}
+
+
+- (void)OnLoadSendMsg:(id<UMViewControl>)sender args:(XEventArgs *)args{
+    if(args==nil) {
+        args = [[XEventArgs alloc] init:self];
+    }
+    [args setInvoke:[self getInvokeInfo:@"OnLoadSendMsg" method:@"OnLoadSendMsg" sender:sender]];
+    [UMCommonSevice callSeviceWithMethod:args];
+    
 }
 
 
