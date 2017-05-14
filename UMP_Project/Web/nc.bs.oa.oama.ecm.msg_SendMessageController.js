@@ -82,6 +82,13 @@ function nc$bs$oa$oama$ecm$msg_SendMessageController$SendMessage(ctx){
         alert($res.getResString("msg_msgtitleIsNull"));
         return;
     }
+    params["msgtitle"] = msgtitle;
+    var params = ctx.params();
+    //    alert(jsonToString(params));
+    var actiontype = params["actionType"];
+    if (!(actiontype == null || actiontype == "" || typeof(actiontype) == 'undefined')){
+        params["actiontype"] = actiontype;
+    }
 	var content = ctx.get("content");
 	var attachmentName = getAttachmentNameCache();
 	if(!attachmentName && !content)
@@ -219,7 +226,26 @@ function nc$bs$oa$oama$ecm$msg_SendMessageController$onCloseClick(ctx){
 	
 }
 function nc$bs$oa$oama$ecm$msg_SendMessageController$OnLoadSendMsg(ctx){
-    alert("发送消息界面初始化");
+    var params = ctx.params();
+//    alert(jsonToString(params));
+    var actiontype = params["actionType"];
+    if (actiontype == null || actiontype == "" || typeof(actiontype) == 'undefined'){
+        return;
+    }
+    //动作类型不为空，说明是回复或者转发
+    var msgtitle = params["msgtitle"];
+    var content = params["content"];
+    var sendBy = params["sendBy"];
+    
+    if (actiontype == "Reply"){
+        msgtitle = "回复:" + msgtitle;
+    }else if(actiontype == "Transfer"){
+        msgtitle = "转发:" + msgtitle;
+    }
+    
+    //设置标题到界面
+    ctx.load({"msgtitle":msgtitle,"content":content,"recipientNames":sendBy});
+    
 }
 nc.bs.oa.oama.ecm.msg_SendMessageController.prototype = {
     initialize : nc$bs$oa$oama$ecm$msg_SendMessageController$initialize,

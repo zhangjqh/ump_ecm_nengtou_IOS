@@ -1507,9 +1507,11 @@ if(args==nil) {
     
     [args putValue:@"true" forKey:@"iskeep"];
     
-    [args putValue:@"actionType" forKey:@"Reply"];
+    [args putValue:@"Reply" forKey:@"actionType"];
     
-    [args putValue:@"#{msgtitle}" forKey:@"reply_msgtitle"];
+    [args putValue:@"#{msgtitle}" forKey:@"msgtitle"];
+    [args putValue:@"#{sendBy}" forKey:@"sendBy"];
+    [args putValue:@"#{content}" forKey:@"content"];
     [UMCommonSevice callSeviceWithMethod:args];
 }
 
@@ -1526,9 +1528,11 @@ if(args==nil) {
     
     [args putValue:@"true" forKey:@"iskeep"];
     
-    [args putValue:@"actionType" forKey:@"Transfer"];
+    [args putValue:@"Transfer" forKey:@"actionType"];
     
-    [args putValue:@"#{msgtitle}" forKey:@"transfer_msgtitle"];
+    [args putValue:@"#{msgtitle}" forKey:@"msgtitle"];
+    [args putValue:@"#{sendBy}" forKey:@"sendBy"];
+    [args putValue:@"#{content}" forKey:@"content"];
     [UMCommonSevice callSeviceWithMethod:args];
     
 }
