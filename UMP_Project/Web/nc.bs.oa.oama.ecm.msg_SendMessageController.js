@@ -83,9 +83,9 @@ function nc$bs$oa$oama$ecm$msg_SendMessageController$SendMessage(ctx){
         return;
     }
     params["msgtitle"] = msgtitle;
-    var params = ctx.params();
-    //    alert(jsonToString(params));
-    var actiontype = params["actionType"];
+    var params1 = ctx.params();
+    
+    var actiontype = params1["actionType"];
     if (!(actiontype == null || actiontype == "" || typeof(actiontype) == 'undefined')){
         params["actiontype"] = actiontype;
     }
@@ -96,6 +96,7 @@ function nc$bs$oa$oama$ecm$msg_SendMessageController$SendMessage(ctx){
 		alert($res.getResString("msg_IsNullContentOrAttach"));//消息内容或附件不能同时为空
 		return;
 	}
+    
 	UM_NativeCall.callService("UMService.callAction", jsonToString(params));
 	clearCache();
 }
