@@ -237,16 +237,22 @@ function nc$bs$oa$oama$ecm$msg_SendMessageController$OnLoadSendMsg(ctx){
     var msgtitle = params["msgtitle"];
     var content = params["content"];
     var sendBy = params["sendBy"];
+    var sendDate = params["sendDate"];
     
+    var newcontent = "\\r\\n";
+    newcontent = "-------------------\\r\\n";
+    newcontent += "发件人\:" + sendBy + "\\r\\n";
+    newcontent += "发送日期\:" + sendDate + "\\r\\n";
+    newcontent += "消息内容\:" + content + "\\r\\n";
     if (actiontype == "Reply"){
         msgtitle = "回复:" + msgtitle;
+        //设置标题到界面
+        ctx.load({"msgtitle":msgtitle,"content":newcontent,"recipientNames":sendBy});
     }else if(actiontype == "Transfer"){
         msgtitle = "转发:" + msgtitle;
+        //设置标题到界面
+        ctx.load({"msgtitle":msgtitle,"content":newcontent});
     }
-    
-    //设置标题到界面
-    ctx.load({"msgtitle":msgtitle,"content":content,"recipientNames":sendBy});
-    
 }
 nc.bs.oa.oama.ecm.msg_SendMessageController.prototype = {
     initialize : nc$bs$oa$oama$ecm$msg_SendMessageController$initialize,

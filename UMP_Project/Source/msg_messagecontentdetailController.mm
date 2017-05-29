@@ -1512,6 +1512,7 @@ if(args==nil) {
     [args putValue:@"#{msgtitle}" forKey:@"msgtitle"];
     [args putValue:@"#{sendBy}" forKey:@"sendBy"];
     [args putValue:@"#{content}" forKey:@"content"];
+    [args putValue:@"#{sendDate}" forKey:@"sendDate"];
     [UMCommonSevice callSeviceWithMethod:args];
 }
 
@@ -1533,6 +1534,7 @@ if(args==nil) {
     [args putValue:@"#{msgtitle}" forKey:@"msgtitle"];
     [args putValue:@"#{sendBy}" forKey:@"sendBy"];
     [args putValue:@"#{content}" forKey:@"content"];
+    [args putValue:@"#{sendDate}" forKey:@"sendDate"];
     [UMCommonSevice callSeviceWithMethod:args];
     
 }
