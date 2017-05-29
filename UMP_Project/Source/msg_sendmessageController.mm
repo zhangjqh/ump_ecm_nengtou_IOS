@@ -1390,7 +1390,7 @@ static NSString *ModelName = @"msg_CreateMessage";
                           @"padding-bottom":@"14",
                           @"txt_g":@"0.0",
                           @"id":@"txtContent",
-                          @"height":@"150",
+                          @"height":@"106",
                           @"color":@"#000000",
                           @"font_family":@"ArialMT",
                           @"background":@"#ffffff",
