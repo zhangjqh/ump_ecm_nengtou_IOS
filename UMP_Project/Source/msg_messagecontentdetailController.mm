@@ -1511,6 +1511,9 @@ if(args==nil) {
     
     [args putValue:@"#{msgtitle}" forKey:@"msgtitle"];
     [args putValue:@"#{sendBy}" forKey:@"sendBy"];
+    [args putValue:@"#{receiveBy}" forKey:@"receiveBy"];
+    [args putValue:@"#{senderid}" forKey:@"senderid"];
+    [args putValue:@"#{receiverid}" forKey:@"receiverid"];
     [args putValue:@"#{content}" forKey:@"content"];
     [args putValue:@"#{sendDate}" forKey:@"sendDate"];
     [UMCommonSevice callSeviceWithMethod:args];
@@ -1533,6 +1536,9 @@ if(args==nil) {
     
     [args putValue:@"#{msgtitle}" forKey:@"msgtitle"];
     [args putValue:@"#{sendBy}" forKey:@"sendBy"];
+    [args putValue:@"#{receiveBy}" forKey:@"receiveBy"];
+    [args putValue:@"#{senderid}" forKey:@"senderid"];
+    [args putValue:@"#{receiverid}" forKey:@"receiverid"];
     [args putValue:@"#{content}" forKey:@"content"];
     [args putValue:@"#{sendDate}" forKey:@"sendDate"];
     [UMCommonSevice callSeviceWithMethod:args];
