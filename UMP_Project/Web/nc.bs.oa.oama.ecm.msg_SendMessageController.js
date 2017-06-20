@@ -241,22 +241,9 @@ function nc$bs$oa$oama$ecm$msg_SendMessageController$OnLoadSendMsg(ctx){
     var receiveBy = params["receiveBy"];
     var senderid = params["senderid"];
     var receiverid = params["receiverid"];
-    
-    
-    var array = getCache();
-    array = $stringToJSON(array);
-    var autoselectedPerson = {
-        "checked" : true,
-        "id" : senderid,
-        "name" : sendBy,
-        "ListViewSelector" : 1
-    };
-    array.push(autoselectedPerson)
-    $cache.writeFile("ECMPERSONSELECTED",array || []);
-    
-    
-    var newcontent = "\\r\\n";
-    newcontent = "-------------------\\r\\n";
+  
+    var newcontent = "\\r\\n\\r\\n";
+    newcontent += "-------------------\\r\\n";
     newcontent += "发件人\:" + sendBy + "\\r\\n";
     newcontent += "收件人\:" + receiveBy + "\\r\\n";
     newcontent += "发送日期\:" + sendDate + "\\r\\n";
@@ -265,6 +252,17 @@ function nc$bs$oa$oama$ecm$msg_SendMessageController$OnLoadSendMsg(ctx){
         msgtitle = "回复:" + msgtitle;
         //设置标题到界面
         ctx.load({"msgtitle":msgtitle,"content":newcontent,"recipientNames":sendBy});
+        
+        var array = [];
+        var autoselectedPerson = {
+            "checked" : true,
+            "id" : senderid,
+            "name" : sendBy,
+            "ListViewSelector" : 1
+        };
+        array.push(autoselectedPerson)
+        $cache.writeFile("ECMPERSONSELECTED",array || []);
+
     }else if(actiontype == "Transfer"){
         msgtitle = "转发:" + msgtitle;
         //设置标题到界面
