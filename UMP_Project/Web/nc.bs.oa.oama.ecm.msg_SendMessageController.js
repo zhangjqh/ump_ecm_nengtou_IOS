@@ -87,7 +87,7 @@ function nc$bs$oa$oama$ecm$msg_SendMessageController$SendMessage(ctx){
     
     var actiontype = params1["actionType"];
     if (!(actiontype == null || actiontype == "" || typeof(actiontype) == 'undefined')){
-        params["actiontype"] = actiontype;
+        params["actionType"] = actiontype;
         if (actiontype == "Transfer"){
             params["origin_msgid"] = params1["origin_msgid"]
         }
