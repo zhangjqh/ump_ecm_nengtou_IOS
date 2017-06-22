@@ -88,6 +88,9 @@ function nc$bs$oa$oama$ecm$msg_SendMessageController$SendMessage(ctx){
     var actiontype = params1["actionType"];
     if (!(actiontype == null || actiontype == "" || typeof(actiontype) == 'undefined')){
         params["actiontype"] = actiontype;
+        if (actiontype == "Transfer"){
+            params["origin_msgid"] = params1["origin_msgid"]
+        }
     }
 	var content = ctx.get("content");
 	var attachmentName = getAttachmentNameCache();
@@ -266,6 +269,9 @@ function nc$bs$oa$oama$ecm$msg_SendMessageController$OnLoadSendMsg(ctx){
     }else if(actiontype == "Transfer"){
         msgtitle = "转发:" + msgtitle;
         //设置标题到界面
+        
+        //原始邮件ID
+        var origin_msgid = params["origin_msgid"];
         ctx.load({"msgtitle":msgtitle,"content":newcontent});
     }
 }

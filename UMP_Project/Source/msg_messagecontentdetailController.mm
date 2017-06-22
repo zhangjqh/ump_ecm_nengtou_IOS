@@ -1541,6 +1541,7 @@ if(args==nil) {
     [args putValue:@"#{receiverid}" forKey:@"receiverid"];
     [args putValue:@"#{content}" forKey:@"content"];
     [args putValue:@"#{sendDate}" forKey:@"sendDate"];
+    [args putValue:@"#{msgID}" forKey:@"origin_msgid"];
     [UMCommonSevice callSeviceWithMethod:args];
     
 }
